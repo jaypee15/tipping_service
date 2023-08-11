@@ -129,3 +129,7 @@ MEDIA_URL = 'media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'login'
+
+# FIXME reset link not printing to console.
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

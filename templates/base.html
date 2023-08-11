@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-        <title>Todo List</title>
+        <title>Tipstar</title>
     </head>
 
     <body>
@@ -19,7 +19,7 @@
                     {% if request.user.is_authenticated %}
                     <a href="{% url 'login' %}"><i class="bi bi-list-task"></i> My Tasks</a>
                     <a href="{% url 'login' %}"><i class="bi bi-plus-circle"></i> Create Task</a>
-                    <a href="{% url 'login' %}" title="Update my profile">Hi {{request.user | title}}</a>
+                    <a href="{% url 'profile' %}" title="Update my profile">Hi {{request.user | title}}</a>
                     <a href="{% url 'logout' %}" class="btn btn-outline">Logout</a>
           {% else %}
                   <a href="{% url 'login' %}" class="btn btn-outline">Login</a>
