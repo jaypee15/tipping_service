@@ -35,6 +35,7 @@ class RegisterView(FormView):
         
         return super(RegisterView, self).form_valid(form)
 
+
 class MyProfile(LoginRequiredMixin, View):
     def get(self, request):
         user_form = UserUpdateForm(instance=request.user)
