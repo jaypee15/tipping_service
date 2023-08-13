@@ -8,6 +8,12 @@ class Profile(models.Model):
     avatar = models.ImageField(default='avatar.jpg', upload_to='profile_avatars')
     country = CountryField( null=True, blank=True)
     Bio = models.TextField(null=True, blank=True)
+    follows = models.ManyToManyField(
+        "self",
+        related_name="followed_by",
+        symmetrical="false",
+        blank=True
+    )
 
     def __str__(self):
         return f"{self.user.username}'s Profile"
