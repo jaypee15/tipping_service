@@ -1,10 +1,14 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 from django_countries.fields import CountryField
-from django.contrib.auth.models import User
 from PIL import Image
+from django.utils.translation import gettext_lazy as _
+
+class CustomUser(AbstractUser):
+    email = models.EmailField(_('email address'), unique=True)
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     avatar = models.ImageField(default='avatar.jpg', upload_to='profile_avatars')
     country = CountryField( null=True, blank=True)
     Bio = models.TextField(null=True, blank=True)

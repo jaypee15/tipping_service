@@ -1,11 +1,11 @@
 from django.db import models
-from django.contrib.auth.models import User
+from users.models import CustomUser
 
 class TransactionHistory(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     payment_method = models.CharField(max_length=255)
     timestamp = models.DateTimeField(auto_now_add=True)
-    creator = models.ForeignKey(User, on_delete=models.CASCADE)
+    creator = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     supporter_email = models.EmailField(null=False, blank=False)
    
 
