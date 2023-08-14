@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'tips',
     'users',
     'django_countries',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,7 @@ LOGIN_URL = 'login'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'users.User'
 
-AUTHENTICATION_BACKENDS = ['users.backends.EmailBackend']
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
