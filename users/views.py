@@ -1,77 +1,62 @@
-# from django.shortcuts import render, redirect
-# from django.contrib.auth.views import LoginView
-# from django.views.generic.edit import FormView
-# from django.urls import reverse_lazy
-# from django.contrib import messages
-# from django.contrib.auth import login
-# from django.views import View
+from rest_framework import views, response, exceptions, permissions
 
-# from django.contrib.auth.mixins import LoginRequiredMixin
-# from .forms import RegisterForm, ProfileUpdateForm, UserUpdateForm
+from . import serializers as user_serializer
+from . import services, authentication
 
 
+class RegisterApi(views.APIView):
+    def post(self, request):
+        serializer = user_serializer.UserSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
 
-# class MyLoginView(LoginView):
-#     redirect_authenticated_user = True
-#     template_name = 'users/login.html'
+        data = serializer.validated_data
+        serializer.instance = services.create_user(user_dc=data)
 
-#     def get_success_url(self):
-#         return reverse_lazy('profile')
-    
-#     def form_invalid(self, form):
-#         messages.error(self.request, 'invalid username or password')
-#         return self.render_to_response(self.get_context_data(form=form))
-    
-# class RegisterView(FormView):
-#     template_name = 'users/register.html'
-#     form_class = RegisterForm
-#     redirect_authenticated_user = True
-#     success_url = reverse_lazy('profile')
-
-#     def form_valid(self, form):
-#         user = form.save()
-#         if user:
-#             login(self.request, user)
-        
-#         return super(RegisterView, self).form_valid(form)
+        return response.Response(data=serializer.data)
 
 
-# class MyProfile(LoginRequiredMixin, View):
-#     def get(self, request):
-#         user_form = UserUpdateForm(instance=request.user)
-#         profile_form = ProfileUpdateForm(instance=request.user.profile)
+class LoginApi(views.APIView):
+    def post(self, request):
+        email = request.data["email"]
+        password = request.data["password"]
 
-#         context ={
-#             'user_form': user_form,
-#             'profile_form': profile_form
-#         }
+        user = services.user_email_selector(email=email)
 
-#         return render(request, 'users/profile.html', context)
-    
-#     def post(self, request):
-#         user_form = UserUpdateForm(
-#             request.POST,
-#             instance=request.user
-#         )
-#         profile_form = ProfileUpdateForm(
-#             request.POST,
-#             request.FILES,
-#             instance=request.user.profile
-#         )
+        if user is None:
+            raise exceptions.AuthenticationFailed("Invalid Credentials")
 
-#         if user_form.is_valid() and profile_form.is_valid():
-#             user_form.save()
-#             profile_form.save()
+        if not user.check_password(raw_password=password):
+            raise exceptions.AuthenticationFailed("Invalid Credentials")
 
-#             messages.success(request, 'Your profile has been updated successfully')
+        token = services.create_token(user_id=user.id)
 
-#             return redirect('profile')
-#         else: 
-#             context = {
-#                 'user_form' : user_form,
-#                 'profile_form' : profile_form
-#             }
+        resp = response.Response()
 
-#             messages.error(request, 'Error updating your profile')
+        resp.set_cookie(key="jwt", value=token, httponly=True)
 
-#             return render(request, 'users/profile.html', context)
+        return resp
+
+
+class UserApi(views.APIView):
+
+    authentication_classes = (authentication.CustomUserAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        user = request.user
+
+        serializer = user_serializer.UserSerializer(user)
+
+        return response.Response(serializer.data)
+
+
+class LogoutApi(views.APIView):
+    authentication_classes = (authentication.CustomUserAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        resp = response.Response()
+        resp.delete_cookie("jwt")
+        resp.data = {"message": "so long farewell"}
+
+        return resp

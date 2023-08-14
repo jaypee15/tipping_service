@@ -53,6 +53,7 @@ class User(auth_models.AbstractUser):
     last_name = models.CharField(verbose_name="Last Name", max_length=255)
     email = models.EmailField(verbose_name="Email", max_length=255, unique=True)
     password = models.CharField(max_length=255)
+    # username = models.CharField(max_length=255)
     username = None
     avatar = models.ImageField(default='avatar.jpg', upload_to='profile_avatars')
     country = CountryField( null=True, blank=True)
@@ -65,7 +66,7 @@ class User(auth_models.AbstractUser):
     )
 
     def __str__(self):
-        return f"{self.username}'s Profile"
+        return f"{self.last_name}'s Profile"
     
     
     def save(self, *args, **kwargs):
