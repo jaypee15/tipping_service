@@ -1,0 +1,14 @@
+.input_case {
+  border: solid 1px #808080;
+  border-radius: 10px;
+  width: 398px;
+  padding: 15px;
+  /* height: 54px; */
+  /* align-items: center; */
+  /* justify-content: center; */ 
+}
+
+.input_case input {
+  /* border: none; */
+  width: 80%;
+}
