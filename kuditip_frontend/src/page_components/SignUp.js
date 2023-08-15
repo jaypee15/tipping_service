@@ -30,10 +30,27 @@ const SignUp = () => {
 
             </div>
 
-            <UsernameInput />
-            <EmailInput />
-            <PasswordInput />
-            <Button /> 
+            <div className='sign_form'>
+
+                <UsernameInput />
+
+                <EmailInput />
+
+                <PasswordInput />
+
+                <Button signUpName='Create account'/>
+
+            </div> 
+
+            <div className='google_create'>
+
+                <p>
+                    Or
+                </p>
+
+                <Button signUpName='Create account'/> 
+
+            </div>
 
         </div>
 

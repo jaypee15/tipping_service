@@ -1,27 +1,28 @@
 import logo from '../images/frame_11.png';
-import { Link } from 'react-router-dom'
-import Button from '../unit_components/Button'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const Header = () => {
   return (
-    <header>
+    <header className='header_section'>
 
-        <img src={logo} alt="kuditip_logo" />
+        <Link>
+            <img src={logo} alt="kuditip_logo" />
+        </Link>
 
-        <div>
+        <nav className='nav_section'>
 
-            <Link>Explore</Link>
+            <NavLink>Explore</NavLink>
 
-            <Link>About Us</Link>
+            <NavLink>About Us</NavLink>
 
-            <Link>Blog</Link>
+            <NavLink>Blog</NavLink>
 
-            <Link>Log In</Link>
+            <NavLink>Log In</NavLink>
 
-            <Button />
+            <NavLink>Sign Up</NavLink>
 
-        </div>
+        </nav>
         
     </header>
   )

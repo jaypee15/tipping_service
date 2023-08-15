@@ -1,7 +1,16 @@
+import { FaLock, FaUnlock } from 'react-icons/fa';
+
+
 const PasswordInput = () => {
     return (
       <div className="input_case">
-        <input type="password" placeholder="Password"/>
+        <input 
+            name='password'
+            type="password" 
+            placeholder="Password"
+        />
+        <FaLock />
+        {/* <FaUnlock /> */}
       </div>
     )
   }

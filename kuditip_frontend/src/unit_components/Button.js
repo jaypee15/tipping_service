@@ -1,7 +1,7 @@
-const Button = () => {
+const Button = ({signUpName}) => {
     return (
       <button>
-        Sign Up
+        {signUpName}
       </button>
     )
   }

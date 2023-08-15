@@ -1,8 +1,20 @@
+.form_heading {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form_heading a {
+    color: #EC7878;
+    margin-left: 10px;
+}
+
 .form_section {
     margin: auto;
     width: 398px;
 }
 
-.form_heading {
+.google_create {
     text-align: center;
+    font-weight: 600;
 }
