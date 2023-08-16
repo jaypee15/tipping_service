@@ -1,12 +1,12 @@
 import './SignUp.css';
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import UsernameInput from "../unit_components/UsernameInput";
 import EmailInput from "../unit_components/EmailInput";
 import PasswordInput from "../unit_components/PasswordInput";
 import Button from "../unit_components/Button";
-import google from '../images/frame_20.png'
+// import google from '../images/frame_20.png'
 import { useState } from 'react';
+import GoogleCreate from '../components/GoogleCreate';
 
 
 const SignUp = () => {
@@ -31,8 +31,6 @@ const SignUp = () => {
 
   return (
     <div>
-
-        <Header />
 
         <div className="form_section">
 
@@ -63,17 +61,10 @@ const SignUp = () => {
 
             </form> 
 
-            <div className='google_create'>
-
-                <p>
-                    Or
-                </p>
-
-                <img src={google} alt="google_acct" />
-
-            </div>
 
         </div>
+        
+       <GoogleCreate/>
 
     </div>
   )
