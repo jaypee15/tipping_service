@@ -5,7 +5,8 @@ const UsernameInput = () => {
       <div className="input_case">
         <input 
             name='username'
-            type="text" 
+            type="text"
+            required 
             placeholder="Username"
         />
         <IoMdContact />

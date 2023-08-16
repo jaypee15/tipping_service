@@ -1,8 +1,10 @@
 const Button = ({signUpName}) => {
     return (
-      <button>
+      <button
+        type="submit"
+      >
         {signUpName}
       </button>
     )
-  }
-  export default Button
+}
+ export default Button

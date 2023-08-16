@@ -1,5 +1,6 @@
 import logo from '../images/frame_11.png';
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 
 const Header = () => {
@@ -22,6 +23,10 @@ const Header = () => {
 
             <NavLink>Sign Up</NavLink>
 
+        </nav>
+
+        <nav className='menu'>
+            <GiHamburgerMenu />
         </nav>
         
     </header>
