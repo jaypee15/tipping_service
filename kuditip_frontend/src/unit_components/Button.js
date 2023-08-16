@@ -1,10 +1,12 @@
-const Button = ({signUpName}) => {
+const Button = ({signUpName, Login}) => {
+  const Name = signUpName ?? Login;
     return (
       <button
         type="submit"
       >
-        {signUpName}
+        {Name}
       </button>
+
     )
 }
  export default Button
