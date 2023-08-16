@@ -5,9 +5,30 @@ import UsernameInput from "../unit_components/UsernameInput";
 import EmailInput from "../unit_components/EmailInput";
 import PasswordInput from "../unit_components/PasswordInput";
 import Button from "../unit_components/Button";
+import google from '../images/frame_20.png'
+import { useState } from 'react';
 
 
 const SignUp = () => {
+
+    const [signEmail, setSignUpEmail] = useState('');
+    const [signPassword, setSignPassword] = useState('');
+
+
+    const getEmail = (mail) => {
+        setSignUpEmail(mail);
+    }
+
+    const getPassword = (pass) => {
+        setSignPassword(pass);
+    }
+
+    const handleSignUp = (e) => {
+        e.preventDefault();
+        console.log(signEmail);
+        console.log(signPassword);
+    }
+
   return (
     <div>
 
@@ -30,17 +51,17 @@ const SignUp = () => {
 
             </div>
 
-            <div className='sign_form'>
+            <form className='sign_form' onSubmit={handleSignUp}>
 
                 <UsernameInput />
 
-                <EmailInput />
+                <EmailInput getEmail={getEmail}/>
 
-                <PasswordInput />
+                <PasswordInput getPassword={getPassword}/>
 
                 <Button signUpName='Create account'/>
 
-            </div> 
+            </form> 
 
             <div className='google_create'>
 
@@ -48,7 +69,7 @@ const SignUp = () => {
                     Or
                 </p>
 
-                <Button signUpName='Create account'/> 
+                <img src={google} alt="google_acct" />
 
             </div>
 

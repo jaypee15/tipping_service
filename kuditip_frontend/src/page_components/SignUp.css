@@ -18,3 +18,13 @@
     text-align: center;
     font-weight: 600;
 }
+
+@media screen and (max-width: 576px) {
+    .form_section {
+        width: 100%;
+    }
+
+    .form_section img {
+        width: 100%;
+    }
+}
