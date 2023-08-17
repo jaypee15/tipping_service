@@ -49,14 +49,15 @@ class UserManager(auth_models.BaseUserManager):
 
 
 class User(auth_models.AbstractUser):
-    first_name = models.CharField(verbose_name="First Name", max_length=255)
-    last_name = models.CharField(verbose_name="Last Name", max_length=255)
-    email = models.EmailField(verbose_name="Email", max_length=255, unique=True)
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255)
+    email = models.EmailField( max_length=255, unique=True)
     password = models.CharField(max_length=255)
-    # username = models.CharField(max_length=255)
-    username = None
+    # username = None
+    display_name = models.CharField(max_length=255)
     avatar = models.ImageField(default='avatar.jpg', upload_to='profile_avatars')
-    country = CountryField( null=True, blank=True)
+    cover_img = models.ImageField(upload_to='cover_images', null=True, blank=True)
+    country = CountryField( null=True, blank=True) 
     Bio = models.TextField(null=True, blank=True)
     follows = models.ManyToManyField(
         "self",
@@ -83,4 +84,4 @@ class User(auth_models.AbstractUser):
     objects = UserManager()
 
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["first_name", "last_name"]
+    REQUIRED_FIELDS = ["display_mame"]

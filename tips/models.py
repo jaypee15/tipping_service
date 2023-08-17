@@ -2,9 +2,9 @@ from django.db import models
 from django.conf import settings
 
 class TransactionHistory(models.Model):
-    creator = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    amount = models.DecimalField(max_digits=10, decimal_places=2)
-    payment_method = models.CharField(max_length=255)
+    creator = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.DO_NOTHING)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)  #FIXME: refactor currency field
+    payment_method = models.CharField(max_length=255) #FIXME change to a choice field
     timestamp = models.DateTimeField(auto_now_add=True)
     supporter_email = models.EmailField(null=False, blank=False)
    
