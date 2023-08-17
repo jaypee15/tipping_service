@@ -4,6 +4,8 @@ import { FaLock, FaUnlock } from 'react-icons/fa';
 
 const PasswordInput = ({getPassword}) => {
 
+    const [showPassword, setShowPassword] = useState(true);
+
     const [password, setPassword] = useState('');
 
     const fixPassword = () => {
@@ -21,13 +23,20 @@ const PasswordInput = ({getPassword}) => {
         <input 
             name='password'
             required
-            type="password" 
+            type={showPassword ? 'password' : 'text'} 
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
         />
-        <FaLock />
-        {/* <FaUnlock /> */}
+
+        <span onClick={() => setShowPassword((prev) => !prev)}>
+
+            {
+                showPassword ? <FaLock /> : <FaUnlock />
+            }
+
+        </span>
+
       </div>
     )
   }
