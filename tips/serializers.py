@@ -5,4 +5,4 @@ class TransactionsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TransactionHistory
-        fields = '__all__'
+        fields = ('creator', 'amount', 'payment_method', 'timestamp', 'supporter_email')

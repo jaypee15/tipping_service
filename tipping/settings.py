@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tips',
     'users',
     'django_countries',
+    'corsheaders',
     'rest_framework',
 ]
 
@@ -137,5 +138,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 AUTH_USER_MODEL = 'users.User'
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+     'http://localhost:3000'
+]
+# CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
