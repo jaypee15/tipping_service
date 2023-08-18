@@ -11,9 +11,7 @@ const Header = () => {
     const toggleMenu = () => {
   
         setShowMenu((prev) => !prev)
-  
-    //   document.querySelector(".mobile_nav")?.classList.toggle('toggleBoxChange');
-  
+    
     }
 
   return (
@@ -46,19 +44,23 @@ const Header = () => {
             
         </header>
 
-        <nav className={showMenu ? 'mobile_nav' : 'mobile_toggle'}>
+        <div className='mobile' >
 
-            <NavLink>Explore</NavLink>
+            <nav className={showMenu ? 'mobile_nav' : 'mobile_toggle'} >
 
-            <NavLink>About Us</NavLink>
+                <NavLink>Explore</NavLink>
 
-            <NavLink>Blog</NavLink>
+                <NavLink>About Us</NavLink>
 
-            <NavLink>Log In</NavLink>
+                <NavLink>Blog</NavLink>
 
-            <NavLink>Sign Up</NavLink>
+                <NavLink>Log In</NavLink>
 
-        </nav>
+                <NavLink>Sign Up</NavLink>
+
+            </nav>
+            
+        </div>
 
     </div>
   )

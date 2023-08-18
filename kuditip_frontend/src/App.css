@@ -19,7 +19,7 @@
   display: none;
 }
 
-.mobile_nav {
+.mobile {
   display: none;
 }
 
@@ -63,6 +63,10 @@ button {
   .menu {
     display: block;
     font-size: 25px;
+  }
+
+  .mobile {
+    display: block;
   }
 
   .mobile_nav {
