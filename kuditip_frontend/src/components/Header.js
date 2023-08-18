@@ -5,13 +5,34 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header = () => {
   return (
-    <header className='header_section'>
+    <div>
+        <header className='header_section'>
 
-        <Link>
-            <img src={logo} alt="kuditip_logo" />
-        </Link>
+            <Link>
+                <img src={logo} alt="kuditip_logo" />
+            </Link>
 
-        <nav className='nav_section'>
+            <nav className='menu'>
+                <GiHamburgerMenu />
+            </nav>
+
+            <nav className='nav_section'>
+
+                <NavLink>Explore</NavLink>
+
+                <NavLink>About Us</NavLink>
+
+                <NavLink>Blog</NavLink>
+
+                <NavLink>Log In</NavLink>
+
+                <NavLink>Sign Up</NavLink>
+
+            </nav>
+            
+        </header>
+
+        <nav className='mobile_nav'>
 
             <NavLink>Explore</NavLink>
 
@@ -25,11 +46,7 @@ const Header = () => {
 
         </nav>
 
-        <nav className='menu'>
-            <GiHamburgerMenu />
-        </nav>
-        
-    </header>
+    </div>
   )
 }
 export default Header
