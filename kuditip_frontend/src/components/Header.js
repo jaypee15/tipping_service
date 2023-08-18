@@ -1,35 +1,68 @@
 import logo from '../images/frame_11.png';
 import { Link, NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { useState } from 'react';
 
 
 const Header = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+  
+        setShowMenu((prev) => !prev)
+    
+    }
+
   return (
-    <header className='header_section'>
+    <div>
+        <header className='header_section'>
 
-        <Link>
-            <img src={logo} alt="kuditip_logo" />
-        </Link>
+            <Link>
+                <img src={logo} alt="kuditip_logo" />
+            </Link>
 
-        <nav className='nav_section'>
+            <nav className='menu' onClick={toggleMenu}>
 
-            <NavLink>Explore</NavLink>
+                <GiHamburgerMenu />
 
-            <NavLink>About Us</NavLink>
+            </nav>
 
-            <NavLink>Blog</NavLink>
+            <nav className='nav_section'>
 
-            <NavLink>Log In</NavLink>
+                <NavLink>Explore</NavLink>
 
-            <NavLink>Sign Up</NavLink>
+                <NavLink>About Us</NavLink>
 
-        </nav>
+                <NavLink>Blog</NavLink>
 
-        <nav className='menu'>
-            <GiHamburgerMenu />
-        </nav>
-        
-    </header>
+                <NavLink>Log In</NavLink>
+
+                <NavLink>Sign Up</NavLink>
+
+            </nav>
+            
+        </header>
+
+        <div className='mobile' >
+
+            <nav className={showMenu ? 'mobile_nav' : 'mobile_toggle'} >
+
+                <NavLink>Explore</NavLink>
+
+                <NavLink>About Us</NavLink>
+
+                <NavLink>Blog</NavLink>
+
+                <NavLink>Log In</NavLink>
+
+                <NavLink>Sign Up</NavLink>
+
+            </nav>
+            
+        </div>
+
+    </div>
   )
 }
 export default Header
