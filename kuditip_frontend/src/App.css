@@ -84,4 +84,9 @@ button {
   .mobile_nav a:hover{
     background-color: #EC7878;
   }
+
+  .mobile_toggle {
+    display: none;
+  }
+
 }
