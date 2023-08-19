@@ -1,0 +1,278 @@
+/* Start of fisrt container */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this line to vertically center items */
+    gap: 2px; /* Add some space between the text and the image */
+}
+
+.firstchild {
+    width: 50%;
+    text-align: center; /* Center-align the text */
+}
+
+.firstchildbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.firstchildbtn a {
+    background-color: darkred;
+    text-decoration: none;
+    width: 100px;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+     /* Adding some padding for better visual appearance */
+}
+
+.secondchild {
+    width: 50%;
+}
+.secondchild img {
+    max-width: 50%; /* Adjust the image's width */
+    display: block; 
+    /* Remove the float and make it a block element */
+    margin: 0 auto; 
+    margin-top: 3rem;
+    /* Center the image horizontally */
+}
+/* End of fisrt container */ 
+
+
+ /* Start of search input  */
+  .searchinput{
+     text-align: center;
+  }
+
+  .textforsearch{
+      font-size: 20px;
+  }
+ .inputsearch{
+    display: flex;
+    border-radius: 3px;
+    border: solid rgb(236, 203, 206);
+    box-shadow:  1px 2px 2px rgb(183, 175, 177);
+    gap: 5px;
+    width: 30%;
+    height: 40px;
+    margin: 0 auto;
+    align-items: center;
+    
+ }
+ .inputsearch input{
+     width: 100%;
+     height: 25px;
+     border: none;
+     outline: none;
+     margin-left: 10px;
+ }
+
+ .inputsearch p{
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 25px;
+    background-color: darkred;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 10px;
+    position: relative;  
+    cursor: pointer;  
+ }
+ /* End of search input  */
+
+ /* Start of what's kuditip  */
+ .whatskuditip{
+     text-align: center;
+ }
+ .whatskuditip h5{
+     margin-top: 2rem;
+     color: rgb(179, 18, 71);
+     font-size: 15px;
+ }
+ .whatskuditip span{
+    color: rgb(48, 47, 47);
+    font-size: 14px;
+    
+ }
+ /* whatskuditip-logo */
+ .whatskuditip-logo{
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     margin-top: 2rem;
+   
+ }
+
+ .whatskuditip-logo h5{
+    color: rgb(46, 45, 45);
+ }
+
+ .thirdimg img{
+    margin-top: 10px;
+ }
+
+ .whatskuditip-logo img{
+     width: 50%;
+ }
+
+
+.discover-more {
+    margin: 0 auto;
+    width: 150px; /* Border color matches the background color */
+    height: 50px;
+}
+
+.discover-more a {
+    display: flex;
+    border: 1px solid  rgb(141, 10, 53);
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(134, 1, 45);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+  /* End of what's kuditip  */
+  .whykuditip-header{
+    text-align: center;
+    color: rgb(134, 1, 45);
+}
+ 
+  .whykuditip-logo{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2rem;
+  }
+   
+
+  .logo1, .logo2, .logo3 {
+    border: 1px solid rgb(134, 1, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 13px; /* Adjust the value as needed */
+  }
+   /* End of why choose kudi */
+
+
+   /* Start of create kudi page */
+   .createkudiPage{
+    text-align: center;
+    width: 100%;  
+    margin-top: 4rem;
+} 
+
+.createkudiPage-btn a{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(134, 1, 45);
+    width: 170px;
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(134, 1, 45);
+    margin: 0 auto;
+    border-radius: 7px;
+} 
+.createkudiPage{
+    width: 100%;
+}
+
+.createkudiPage-items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.createkudiPage-items .items{
+    margin-top: 3rem;
+}
+
+.createkudiPage-items img{
+    width: 65%;
+}
+.createkudiPage-items h4{
+    color: rgb(134, 1, 45);;
+    font-size: 17px;
+}
+
+.createkudiPage-items h5{
+    font-size: 16px;
+}
+.createkudiPage-items a{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(134, 1, 45);
+    width: 180px;
+    padding: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(134, 1, 45);
+    margin: 0 auto;
+    border-radius: 7px;
+}
+/* end of create kudi page */
+
+/* @MEDIA QUERY START*/
+
+@media screen and (max-width: 700px) {
+
+    .container1{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .container1 img{
+        
+    }
+    .whatskuditip-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .whykuditip-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 2rem; */
+
+    }
+    .whykuditip-logo .logo3 {
+        width: 170px;
+        margin-top: 2rem;
+    }
+   
+    .whykuditip-logo .logo2 {
+        width: 170px;
+        margin-top: 2rem;
+    }
+
+    .searchinput .inputsearch{
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .whykuditip-logo .logo1 {
+        width: 170px;
+        margin-top: 2rem;
+    }
+    .createkudiPage-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .items a{
+        margin-bottom: 10px;
+    }
+  }
