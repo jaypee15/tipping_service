@@ -44,7 +44,7 @@
 }
 
 button {
-  background-color: #EC7878;
+  background-color: #1baedf;
   border: none;
   color: #fff;
   border-radius: 10px;
@@ -67,12 +67,21 @@ button {
 
   .mobile {
     display: block;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
   }
 
   .mobile_nav {
     display: block;
     border-radius: 10px;
     border: 1px solid #EC7878;
+    /* position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%; */
   }
 
   .mobile_nav a{
