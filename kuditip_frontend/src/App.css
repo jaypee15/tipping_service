@@ -42,6 +42,7 @@
 .input_case textarea {
   border: none;
   width: 100%;
+  resize: none;
 }
 
 .input_case textarea:focus {

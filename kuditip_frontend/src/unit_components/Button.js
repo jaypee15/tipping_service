@@ -1,5 +1,5 @@
-const Button = ({signUpName, Login}) => {
-  const Name = signUpName ?? Login;
+const Button = ({signUpName, Login, Next}) => {
+  const Name = signUpName ?? Login ?? Next;
     return (
       <button
         type="submit"
