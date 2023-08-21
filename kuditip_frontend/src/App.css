@@ -15,6 +15,11 @@
   font-weight: bold;
 }
 
+.pages_container {
+  margin: auto;
+  width: 398px;
+}
+
 .menu {
   display: none;
 }
@@ -32,6 +37,16 @@
   font-size: 24px;
   color: #808080;
   margin-bottom: 20px;
+}
+
+.input_case textarea {
+  border: none;
+  width: 100%;
+  resize: none;
+}
+
+.input_case textarea:focus {
+  outline-style: none;
 }
 
 .input_case input {
