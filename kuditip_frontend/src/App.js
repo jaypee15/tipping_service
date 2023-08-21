@@ -5,6 +5,7 @@ import Login from './page_components/Login';
 import Header from './components/Header';
 import Home from './page_components/Home'
 import Footer from './components/Footer';
+import AboutMember from './page_components/AboutMember';
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
    <div className="App">
     <Header/>
      <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='jkkk' element={<Home/>}/>
       <Route path='signup' element={<SignUp />} />
       <Route path='logo' element={<Login/>}/>
+      <Route path='/' element={<AboutMember/>}/>
      </Routes>
      <Footer/>
     </div>
