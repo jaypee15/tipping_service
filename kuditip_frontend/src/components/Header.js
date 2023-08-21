@@ -1,7 +1,8 @@
-import logo from '../images/frame_11.png';
-import { Link, NavLink } from 'react-router-dom';
+// import logo from '../images/frame_11.png';
+import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
+import Logo from '../unit_components/Logo';
 
 
 const Header = () => {
@@ -18,9 +19,11 @@ const Header = () => {
     <div>
         <header className='header_section'>
 
-            <Link>
+            <Logo />
+
+            {/* <Link>
                 <img src={logo} alt="kuditip_logo" />
-            </Link>
+            </Link> */}
 
             <nav className='menu' onClick={toggleMenu}>
 
