@@ -1,6 +1,6 @@
 import './SignUp.css';
 import { Link } from "react-router-dom";
-import UsernameInput from "../unit_components/UsernameInput";
+import TextInput from "../unit_components/TextInput";
 import EmailInput from "../unit_components/EmailInput";
 import PasswordInput from "../unit_components/PasswordInput";
 import Button from "../unit_components/Button";
@@ -51,7 +51,7 @@ const SignUp = () => {
 
             <form className='sign_form' onSubmit={handleSignUp}>
 
-                <UsernameInput />
+                <TextInput />
 
                 <EmailInput getEmail={getEmail}/>
 
