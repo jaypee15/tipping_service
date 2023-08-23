@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './page_components/Home'
 import Footer from './components/Footer';
 import AboutMember from './page_components/AboutMember';
+import CreateUsername from './page_components/CreateUsername';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <Route path='jkkk' element={<Home/>}/>
       <Route path='signup' element={<SignUp />} />
       <Route path='logo' element={<Login/>}/>
-      <Route path='/' element={<AboutMember/>}/>
+      <Route path='bn' element={<AboutMember/>}/>
+      <Route path='/' element={<CreateUsername/>}/>
      </Routes>
      <Footer/>
     </div>

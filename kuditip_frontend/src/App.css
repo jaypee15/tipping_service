@@ -20,6 +20,10 @@
   width: 398px;
 }
 
+.pages_container img {
+  width: 100%;
+}
+
 .menu {
   display: none;
 }
