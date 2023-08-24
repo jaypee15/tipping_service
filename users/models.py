@@ -53,7 +53,7 @@ class User(auth_models.AbstractUser):
     last_name = models.CharField(max_length=255)
     email = models.EmailField( max_length=255, unique=True)
     password = models.CharField(max_length=255)
-    # username = None
+    username = None
     display_name = models.CharField(max_length=255)
     avatar = models.ImageField(default='avatar.jpg', upload_to='profile_avatars')
     cover_img = models.ImageField(upload_to='cover_images', null=True, blank=True)
