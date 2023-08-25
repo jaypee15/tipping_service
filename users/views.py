@@ -5,6 +5,7 @@ from . import services, authentication
 
 
 class RegisterApi(views.APIView):
+    """Endpoint for user registration"""
     def post(self, request):
         serializer = user_serializer.UserSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -16,6 +17,7 @@ class RegisterApi(views.APIView):
 
 
 class LoginApi(views.APIView):
+    """Endpoint for user Login"""
     def post(self, request):
         email = request.data["email"]
         password = request.data["password"]
@@ -38,7 +40,7 @@ class LoginApi(views.APIView):
 
 
 class UserApi(views.APIView):
-
+    """ This endpoint shows the users information stored on the database """
     authentication_classes = (authentication.CustomUserAuthentication,)
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -51,6 +53,7 @@ class UserApi(views.APIView):
 
 
 class LogoutApi(views.APIView):
+    """Endpoint for user logout"""
     authentication_classes = (authentication.CustomUserAuthentication,)
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -60,3 +63,7 @@ class LogoutApi(views.APIView):
         resp.data = {"message": "so long farewell"}
 
         return resp
+    
+class MyPageAPi(views.APIView):
+    """Endpoint to display users page"""
+    pass

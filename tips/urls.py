@@ -3,6 +3,6 @@ from .views import ListTransactionAPIView,CreateTransactionAPIView
 
 
 urlpatterns = [
-   path('', ListTransactionAPIView.as_view(), name='list'),
+   path('dashboard', ListTransactionAPIView.as_view(), name='dashboard'),
    path('create', CreateTransactionAPIView.as_view(), name='create')
 ]

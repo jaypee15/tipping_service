@@ -26,7 +26,7 @@ JWT_SECRET = 'unknwonmmostsecretkeyever'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['c64e-197-210-85-149.ngrok-free.app', '127.0.0.1']
 
 
 # Application definition
