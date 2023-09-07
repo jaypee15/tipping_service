@@ -38,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tips',
-    'users',
+
+    # local
+    'transactions.apps.TransactionsConfig',
+    'users.apps.UsersConfig',
+
+    # 3rd party
     'django_countries',
     'corsheaders',
     'rest_framework',
@@ -137,7 +141,7 @@ LOGIN_URL = 'login'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.CustomUser'
 
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000'

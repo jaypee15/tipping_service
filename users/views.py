@@ -1,69 +1,66 @@
-from rest_framework import views, response, exceptions, permissions
+# from rest_framework import views, response, exceptions, permissions
 
-from . import serializers as user_serializer
-from . import services, authentication
-
-
-class RegisterApi(views.APIView):
-    """Endpoint for user registration"""
-    def post(self, request):
-        serializer = user_serializer.UserSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-
-        data = serializer.validated_data
-        serializer.instance = services.create_user(user_dc=data)
-
-        return response.Response(data=serializer.data)
+# from . import serializers as user_serializer
+# from . import services, authentication
 
 
-class LoginApi(views.APIView):
-    """Endpoint for user Login"""
-    def post(self, request):
-        email = request.data["email"]
-        password = request.data["password"]
+# class RegisterApi(views.APIView):
+#     """Endpoint for user registration"""
+#     def post(self, request):
+#         serializer = user_serializer.UserSerializer(data=request.data)
+#         serializer.is_valid(raise_exception=True)
 
-        user = services.user_email_selector(email=email)
+#         data = serializer.validated_data
+#         serializer.instance = services.create_user(user_dc=data)
 
-        if user is None:
-            raise exceptions.AuthenticationFailed("Invalid Credentials")
-
-        if not user.check_password(raw_password=password):
-            raise exceptions.AuthenticationFailed("Invalid Credentials")
-
-        token = services.create_token(user_id=user.id)
-
-        resp = response.Response()
-
-        resp.set_cookie(key="jwt", value=token, httponly=True)
-
-        return resp
+#         return response.Response(data=serializer.data)
 
 
-class UserApi(views.APIView):
-    """ This endpoint shows the users information stored on the database """
-    authentication_classes = (authentication.CustomUserAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
+# class LoginApi(views.APIView):
+#     """Endpoint for user Login"""
+#     def post(self, request):
+#         email = request.data["email"]
+#         password = request.data["password"]
 
-    def get(self, request):
-        user = request.user
+#         user = services.user_email_selector(email=email)
 
-        serializer = user_serializer.UserSerializer(user)
+#         if user is None:
+#             raise exceptions.AuthenticationFailed("Invalid Credentials")
 
-        return response.Response(serializer.data)
+#         if not user.check_password(raw_password=password):
+#             raise exceptions.AuthenticationFailed("Invalid Credentials")
+
+#         token = services.create_token(user_id=user.id)
+
+#         resp = response.Response()
+
+#         resp.set_cookie(key="jwt", value=token, httponly=True)
+
+#         return resp
 
 
-class LogoutApi(views.APIView):
-    """Endpoint for user logout"""
-    authentication_classes = (authentication.CustomUserAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
+# class UserApi(views.APIView):
+#     """ This endpoint shows the users information stored on the database """
+#     authentication_classes = (authentication.CustomUserAuthentication,)
+#     permission_classes = (permissions.IsAuthenticated,)
 
-    def post(self, request):
-        resp = response.Response()
-        resp.delete_cookie("jwt")
-        resp.data = {"message": "so long farewell"}
+#     def get(self, request):
+#         user = request.user
 
-        return resp
+#         serializer = user_serializer.UserSerializer(user)
+
+#         return response.Response(serializer.data)
+
+
+# class LogoutApi(views.APIView):
+#     """Endpoint for user logout"""
+#     authentication_classes = (authentication.CustomUserAuthentication,)
+#     permission_classes = (permissions.IsAuthenticated,)
+
+#     def post(self, request):
+#         resp = response.Response()
+#         resp.delete_cookie("jwt")
+#         resp.data = {"message": "so long farewell"}
+
+#         return resp
     
-class MyPageAPi(views.APIView):
-    """Endpoint to display users page"""
-    pass

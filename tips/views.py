@@ -2,7 +2,8 @@ from rest_framework import permissions
 from rest_framework.generics import ListAPIView, CreateAPIView
 
 from .models import TransactionHistory
-from .serializers import TransactionsSerializer
+from users.models import User
+from .serializers import TransactionsSerializer, MyPageSerializer
 from users import authentication
 
 class ListTransactionAPIView(ListAPIView):
@@ -24,3 +25,16 @@ class CreateTransactionAPIView(CreateAPIView):
 
     queryset = TransactionHistory.objects.all()
     serializer_class = TransactionsSerializer
+
+class MyPageAPiView(ListAPIView):
+    """Endpoint to display users page"""
+
+
+    queryset = User.objects.all()
+    serializer_class = MyPageSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        return queryset.filter(display_name = self.request.pk)
+    
+    
