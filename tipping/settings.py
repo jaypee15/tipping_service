@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'djmoney',
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -156,6 +157,7 @@ REST_FRAMEWORK = {
 "rest_framework.authentication.SessionAuthentication",
 "rest_framework.authentication.TokenAuthentication", 
 ],
+'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -172,4 +174,13 @@ CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
 
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend" 
+
 SITE_ID = 1 
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'KudiTip API',
+    'DESCRIPTION': 'A tipping service for creators to be rewarded for their work by their fans.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}
