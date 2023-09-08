@@ -1,11 +1,10 @@
-# from django.urls import path
+from django.urls import path
 
-# from . import views
+from .views import UserDetail, UserList
 
-# urlpatterns = [
-#     path("register/", views.RegisterApi.as_view(), name="register"),
-#     path("login/", views.LoginApi.as_view(), name="login"),
-#     path("me/", views.UserApi.as_view(), name="me"),
-#     path("logout/", views.LogoutApi.as_view(), name="logout"),
+urlpatterns = [
+    path("users", UserList.as_view(), name="user_list"),
+    path("users/<int:pk>", UserDetail.as_view(), name="user_detail"),
+
     
-# ]
+]

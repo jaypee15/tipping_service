@@ -94,6 +94,35 @@
 
 
 from django.contrib.auth.models import AbstractUser
+
+from django_countries.fields import CountryField
+
 from django.db import models
+from PIL import Image
+
+
 class CustomUser(AbstractUser):
-    name = models.CharField(null=True, blank=True, max_length=100)
+  
+    first_name = models.CharField(null=True, blank=True, max_length=255)
+    last_name = models.CharField(null=True, blank=True, max_length=255)
+    avatar = models.ImageField(default='avatar.jpg', upload_to='profile_avatars')
+    cover_img = models.ImageField(upload_to='cover_images', null=True, blank=True)
+    country = CountryField( null=True, blank=True) 
+    bio = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.username}'s Profile"
+    
+
+    def save(self, *args, **kwargs):
+
+        #save profile first
+        super().save(*args, **kwargs)
+
+        #resize image
+        img = Image.open(self.avatar.path)
+        if img.height or img.width > 300:
+            output_size = (300, 300)
+            img.thumbnail(output_size)
+            img.save(self.avatar.path)
+    
