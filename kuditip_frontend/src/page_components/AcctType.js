@@ -1,5 +1,6 @@
 import BulbContainer from "../components/BulbContainer";
 import ArrowRight from "../svg/ArrowRight"
+import BulbIcon from "../svg/BulbIcon";
 import Logo from "../unit_components/Logo"
 import './SetAccount.css';
 import { useNavigate } from "react-router-dom";
@@ -9,13 +10,6 @@ const AcctType = () => {
     const navigate = useNavigate();
     const text_margin= {
         // marginRight: "30%"
-    }
-    const bulb_container = {
-        borderRadius: '10px',
-        border: 'solid 1px gray',
-        padding: '16px',
-        backgroundColor: '#fff',
-        height: '65px',
     }
 
   return ( 
@@ -44,7 +38,11 @@ const AcctType = () => {
             </span>
         </div>
 
-        <BulbContainer bulb_container={bulb_container} text_margin={text_margin} text='Everyone can give support and you can change your account type at any time.'/>
+        <div className="AcctType_bulb">
+            <BulbIcon />
+            <div className="vertical_line"></div>
+            <p className="bulb_text" style={text_margin}>Everyone can give support and you can change your account type at any time.</p>
+        </div>
     </div>
   )
 }

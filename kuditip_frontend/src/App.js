@@ -7,7 +7,6 @@ import Home from './page_components/Home'
 import Footer from './components/Footer';
 import AboutMember from './page_components/AboutMember';
 import CreateUsername from './page_components/CreateUsername';
-import SetAccount from './page_components/SetAccount';
 import AcctType from './page_components/AcctType';
 import EarnPlan from './page_components/EarnPlan';
 import UploadProfilePic from './page_components/UploadProfilePic';
@@ -29,11 +28,7 @@ function App() {
       <Route path='/earnPlan' element={<EarnPlan/>}/>
       <Route path='/uploadProfilePic' element={<UploadProfilePic/>}/>
       <Route path='/interest' element={<Interest/>}/>
-      <Route path='/unlockFeatures' element={<UnlockFeatures/>}/>
-
-
-      <Route path='hgfd' element={<SetAccount/>}/>
-      
+      <Route path='/unlockFeatures' element={<UnlockFeatures/>}/>      
      </Routes>
      {/* <Footer/> */}
     </div>

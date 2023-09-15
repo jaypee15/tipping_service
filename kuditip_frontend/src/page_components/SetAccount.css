@@ -35,7 +35,18 @@
     padding: 16px;
     border-radius: 10px;
     margin: 15px 0;
-    width: 100%;
+}
+
+.AcctType_bulb {
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px gray;
+    padding: 16px;
+    background-color: #fff;
+    height: 65px;
+    align-items: center;
+    width: 100%; 
+    margin: 15px 0; 
 }
 
 .vertical_line {
@@ -232,6 +243,10 @@
     }
 
     .acct_type {
+        width: auto;
+    }
+
+    .AcctType_bulb {
         width: auto;
     }
 
