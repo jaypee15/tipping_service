@@ -1,0 +1,250 @@
+.pages_container {
+    width: 398px;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+.pages_container img {
+    margin-bottom: 3em;
+}
+
+.logo {
+    margin: auto;
+    width: fit-content;
+}
+
+.acct_type {
+    padding: 16px;
+    margin-top: 15px;
+    border: solid 2px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    line-height: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px #808080;
+}
+
+.bulb_container {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    background-color: #E0E0E0;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.vertical_line {
+    width: 2px;
+    background-color: #000;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.bulb_text {
+    margin-right: 10%;
+    font-weight: 500;
+}
+
+.checkbox_container {
+    background-color: #fff;
+    padding: 16px 0 16px 16px;
+    font-size: 50px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.input_case {
+    border: solid 1px #808080;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 24px;
+    color: #808080;
+    margin-bottom: 5px;
+}
+  
+.input_case textarea {
+    border: none;
+    width: 100%;
+    resize: none;
+}
+  
+.input_case textarea:focus {
+    outline-style: none;
+}
+  
+.input_case input {
+    border: none;
+    width: 90%;
+}
+  
+.input_case input:focus {
+    outline-style: none;
+}
+
+.choose_image {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    background-color: #E0E0E0;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 15px 0;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 500;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+  
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.profile_picture {
+    justify-content: center;
+    align-items: center;
+    width: 227px;
+    margin: auto;
+}
+
+.interests {
+    padding: 5px 10px;
+    border: solid 1px #1BAEDF;
+    background-color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    color: #1BAEDF;
+    margin: 0 10px 10px 0;
+    display: inline-flex;
+}
+
+.special_feature {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    height: 30px;
+}
+
+.form_heading {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form_heading a {
+    color: #EC7878;
+    margin-left: 10px;
+}
+
+.form_section {
+    margin: auto;
+    width: 398px;
+}
+
+.form_section button {
+    width: 100%;
+}
+
+.form_section p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+}
+
+.google_create {
+    text-align: center;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+
+    .pages_container {
+        width: 100%;
+    }
+
+    .acct_type {
+        width: auto;
+    }
+
+    .bulb_container {
+        width: auto;
+    }
+
+    .form_section {
+        width: 100%;
+    }
+
+    .form_section img {
+        width: 100%;
+    }
+}
+

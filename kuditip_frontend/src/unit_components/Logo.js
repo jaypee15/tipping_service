@@ -2,13 +2,13 @@ import logo from '../images/frame_11.png';
 import { Link } from 'react-router-dom';
 
 
-const Img = () => {
+const Logo = () => {
   return (
     <div>
-        <Link>
-            <img src={logo} alt="kuditip_logo" />
-        </Link>
+      <Link to='/'>
+        <img src={logo} alt="kuditip_logo" />
+      </Link>
     </div>
   )
 }
-export default Img
+export default Logo

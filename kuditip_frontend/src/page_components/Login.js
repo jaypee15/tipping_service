@@ -4,7 +4,8 @@ import PasswordInput from '../unit_components/PasswordInput'
 import Button from '../unit_components/Button'
 import GoogleCreate from '../components/GoogleCreate'
 import { Link } from 'react-router-dom'
-import './SignUp.css';
+import './SetAccount.css';
+import Header from '../components/Header'
 
 
 const Login = () => {
@@ -29,8 +30,10 @@ const Login = () => {
 
   return (
     <div>
+      
+      <Header />
 
-      <div className='form_section'>
+      <section className='form_section'>
 
         <div className="form_heading">
 
@@ -52,13 +55,13 @@ const Login = () => {
 
           <EmailInput getEmail={getEmail} />
           <PasswordInput getPassword={getPassword} />
-          <Button Login='Login'/>
+          <Button text='Login'/>
           <GoogleCreate/>
           <p>Forgot your password?</p>
 
         </form>
 
-      </div>
+      </section>
 
     </div>
   )
