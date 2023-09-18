@@ -1,0 +1,71 @@
+.mypage_header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.mypage-right-header{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    height: 40px;
+}
+
+.arrow_up_icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid skyblue;
+    height: 40px;
+    width: 70px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+
+.plus_logo{
+    display: flex;
+    align-items: center;
+    background-color: rgb(61, 179, 226);
+    color: white;
+    height: 45px;
+    width: 90px;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.edit-page{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px solid skyblue;
+    height: 40px;
+    width: 70px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.edit-page p{
+    text-align: center;
+}
+.lilian_image{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid skyblue;
+    height: 40px;
+    width: 100px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+} 
+.lilian_image img{ 
+    width: 35px;
+    
+}
