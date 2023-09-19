@@ -26,7 +26,7 @@ JWT_SECRET = 'unknwonmmostsecretkeyever'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['c64e-197-210-85-149.ngrok-free.app', '127.0.0.1']
 
 
 # Application definition
@@ -38,16 +38,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tips',
-    'users',
+    'django.contrib.sites',
+
+    # local
+    'transactions.apps.TransactionsConfig',
+    'users.apps.UsersConfig',
+
+    # 3rd party
     'django_countries',
     'corsheaders',
     'rest_framework',
+    'rest_framework.authtoken',
+    "dj_rest_auth",
+    "dj_rest_auth.registration",
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'djmoney',
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -68,6 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "django.template.context_processors.request",
             ],
         },
     },
@@ -134,12 +149,38 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'login'
 
+REST_FRAMEWORK = {
+"DEFAULT_PERMISSION_CLASSES": [
+"rest_framework.permissions.IsAuthenticated",
+],
+"DEFAULT_AUTHENTICATION_CLASSES": [
+"rest_framework.authentication.SessionAuthentication",
+"rest_framework.authentication.TokenAuthentication", 
+],
+'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.CustomUser'
 
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
+     'http://localhost:3000',
+     'http://localhost:8000',
+     
 ]
-# CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend" 
+
+SITE_ID = 1 
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'KudiTip API',
+    'DESCRIPTION': 'A tipping service for creators to be rewarded for their work by their fans.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}

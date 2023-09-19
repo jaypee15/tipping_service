@@ -2,9 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './page_components/SignUp';
 import Login from './page_components/Login';
-import Header from './components/Header';
 import Home from './page_components/Home'
-import Footer from './components/Footer';
 import AboutMember from './page_components/AboutMember';
 import CreateUsername from './page_components/CreateUsername';
 import AcctType from './page_components/AcctType';
@@ -12,12 +10,12 @@ import EarnPlan from './page_components/EarnPlan';
 import UploadProfilePic from './page_components/UploadProfilePic';
 import Interest from './page_components/Interest';
 import UnlockFeatures from './page_components/UnlockFeatures';
+import MyPageHeader from './page_components/MyPageHeader';
 
 
 function App() {
   return (
    <div className="App">
-    {/* <Header/> */}
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='signUp' element={<SignUp />} />
@@ -28,9 +26,9 @@ function App() {
       <Route path='/earnPlan' element={<EarnPlan/>}/>
       <Route path='/uploadProfilePic' element={<UploadProfilePic/>}/>
       <Route path='/interest' element={<Interest/>}/>
-      <Route path='/unlockFeatures' element={<UnlockFeatures/>}/>      
+      <Route path='/unlockFeatures' element={<UnlockFeatures/>}/> 
+      <Route path='/myPage' element={<MyPageHeader/>}/>
      </Routes>
-     {/* <Footer/> */}
     </div>
   );
 }

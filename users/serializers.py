@@ -1,19 +1,17 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from . import services
+
+from django_countries.serializers import CountryFieldMixin
 
 
-class UserSerializer(serializers.Serializer):
-    id = serializers.IntegerField(read_only=True)
-    first_name = serializers.CharField()
-    last_name = serializers.CharField()
-    email = serializers.CharField()
-    password = serializers.CharField(write_only=True)
-    Bio = serializers.CharField()
-    # user_name = serializers.CharField()
-    avatar = serializers.ImageField()
 
-    def to_internal_value(self, data):
-        data = super().to_internal_value(data)
 
-        return services.UserDataClass(**data)
+class UserSerializer(CountryFieldMixin, serializers.ModelSerializer):
+ 
+    class Meta:
+        model = get_user_model()
+        fields = ('first_name', 'last_name', 'email', 'username', 'avatar', 'cover_img', 'country', 'bio',)
+
+
+    
