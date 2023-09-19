@@ -39,9 +39,9 @@ const Header = () => {
 
                 <NavLink>Blog</NavLink>
 
-                <NavLink>Log In</NavLink>
-
-                <NavLink>Sign Up</NavLink>
+                <NavLink to='/login'>Log In</NavLink>
+                
+                <NavLink to='/signup'>Sign Up</NavLink>
 
             </nav>
             

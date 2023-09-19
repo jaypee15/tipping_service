@@ -9,10 +9,12 @@ import line3logo3 from '../images/line3logo3.png'
 import tree from '../images/tree.png'
 import { Link } from "react-router-dom";
 import "./Home.css"
+import Header from '../components/Header'
 
 function Home() {
   return (
     <>
+    <Header />
     {/* Start of first container */}
       <div className='container1'>
         <div className='firstchild'>

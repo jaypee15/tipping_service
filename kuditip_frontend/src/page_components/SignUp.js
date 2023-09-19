@@ -1,5 +1,6 @@
-import './SignUp.css';
-import { Link } from "react-router-dom";
+// import './SignUp.css';
+import './SetAccount.css';
+import { Link, useNavigate } from "react-router-dom";
 import TextInput from "../unit_components/TextInput";
 import EmailInput from "../unit_components/EmailInput";
 import PasswordInput from "../unit_components/PasswordInput";
@@ -7,6 +8,7 @@ import Button from "../unit_components/Button";
 // import google from '../images/frame_20.png'
 import { useState } from 'react';
 import GoogleCreate from '../components/GoogleCreate';
+import Header from '../components/Header';
 
 
 const SignUp = () => {
@@ -14,7 +16,7 @@ const SignUp = () => {
     const [signEmail, setSignUpEmail] = useState('');
     const [signPassword, setSignPassword] = useState('');
 
-
+    const navigate = useNavigate();
     const getEmail = (mail) => {
         setSignUpEmail(mail);
     }
@@ -27,12 +29,15 @@ const SignUp = () => {
         e.preventDefault();
         console.log(signEmail);
         console.log(signPassword);
+        navigate('/acctType')
     }
 
   return (
     <div>
 
-        <div className="form_section">
+        <Header/>
+
+        <section className="form_section">
 
             <div className="form_heading">
 
@@ -42,7 +47,7 @@ const SignUp = () => {
 
                     Already have an account? 
 
-                    <Link>
+                    <Link to="/login">
                         Log In
                     </Link> 
                 </p>
@@ -57,12 +62,12 @@ const SignUp = () => {
 
                 <PasswordInput getPassword={getPassword}/>
 
-                <Button signUpName='Create account'/>
+                <Button text='Create account'/>
 
             </form> 
 
 
-        </div>
+        </section>
         
        <GoogleCreate/>
 

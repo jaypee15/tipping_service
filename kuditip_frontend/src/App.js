@@ -2,26 +2,33 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './page_components/SignUp';
 import Login from './page_components/Login';
-// import Header from './components/Header';
 import Home from './page_components/Home'
-// import Footer from './components/Footer';
 import AboutMember from './page_components/AboutMember';
 import CreateUsername from './page_components/CreateUsername';
+import AcctType from './page_components/AcctType';
+import EarnPlan from './page_components/EarnPlan';
+import UploadProfilePic from './page_components/UploadProfilePic';
+import Interest from './page_components/Interest';
+import UnlockFeatures from './page_components/UnlockFeatures';
 import MyPageHeader from './page_components/MyPageHeader';
+
 
 function App() {
   return (
    <div className="App">
-    {/* <Header/> */}
      <Routes>
-      <Route path='JJJ' element={<Home/>}/>
-      <Route path='/' element={<MyPageHeader/>}/>
-      <Route path='signup' element={<SignUp />} />
-      <Route path='logo' element={<Login/>}/>
-      <Route path='bn' element={<AboutMember/>}/>
-      <Route path='HHH' element={<CreateUsername/>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='signUp' element={<SignUp />} />
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/aboutMember' element={<AboutMember/>}/>
+      <Route path='/createUsername' element={<CreateUsername/>}/>
+      <Route path='/acctType' element={<AcctType/>}/>
+      <Route path='/earnPlan' element={<EarnPlan/>}/>
+      <Route path='/uploadProfilePic' element={<UploadProfilePic/>}/>
+      <Route path='/interest' element={<Interest/>}/>
+      <Route path='/unlockFeatures' element={<UnlockFeatures/>}/> 
+      <Route path='/myPage' element={<MyPageHeader/>}/>
      </Routes>
-     {/* <Footer/> */}
     </div>
   );
 }
