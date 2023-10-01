@@ -11,13 +11,15 @@ import UploadProfilePic from './page_components/UploadProfilePic';
 import Interest from './page_components/Interest';
 import UnlockFeatures from './page_components/UnlockFeatures';
 import MyPageHeader from './page_components/MyPageHeader';
+import Explore from './page_components/Explore';
+import AboutUs from './page_components/AboutUs';
 
 
 function App() {
   return (
    <div className="App">
      <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/Home' element={<Home/>}/>
       <Route path='signUp' element={<SignUp />} />
       <Route path='/login' element={<Login/>}/>
       <Route path='/aboutMember' element={<AboutMember/>}/>
@@ -28,6 +30,8 @@ function App() {
       <Route path='/interest' element={<Interest/>}/>
       <Route path='/unlockFeatures' element={<UnlockFeatures/>}/> 
       <Route path='/myPage' element={<MyPageHeader/>}/>
+      <Route path='/Explore' element={<Explore/>}/>
+      <Route path='/' element={<AboutUs/>}/>
      </Routes>
     </div>
   );
