@@ -1,11 +1,22 @@
 .header-icon{
     display: flex;
-    align-items: center;
+    margin-left: 5%;
+}
+.homeicon img{
+    width: 100px;
 }
 .header-left img{
     width: 90px;
-    padding-left: 30px;
 }
+.navicon{
+    display: none;
+}
+.container{
+    display: flex;
+    gap: 30px;
+    margin-left: 3%;
+}
+
 .header-right{
     display: flex;
     padding: 1px 3px;
@@ -24,16 +35,15 @@
     width: 30px;
     height: 30px;
 }
-
 .navbar{
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.57);
     width: 200px;
-    float: left;
     list-style-type: none;
-    margin-left: 30px;
     padding: 0;
-    justify-content: left;
     margin-bottom: 20px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 0
 }
 .navbar li{
     display: block;
@@ -41,7 +51,6 @@
 .navbar a{
     display: block;
     color: rgb(3, 0, 0);
-    justify-content: flex-start;
     padding: 10px 2px;
     text-decoration: none;
     font-size: 15px;
@@ -51,6 +60,37 @@
     height: 20px;
     width: 20px;
     padding-right: 10px;
-    justify-content: center;
-    object-fit: cover;
+}
+
+/* .content{
+    align-items: center;
+    width: 252px;
+    height: 215px;
+}
+
+.input{
+    border-radius: 3px;
+    border: solid rgb(0, 4, 8);
+    box-shadow:  1px 2px 2px rgb(183, 175, 177);
+} */
+@media only screen and (max-width: 480px) {
+    .header-right{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .navicon{
+        display: block;
+        margin-left: auto;
+        gap: 5px;
+        display: flex;
+    }
+    .navicon img{
+        width: 30px;
+        height: 30px;
+        border: 1px solid #1BAEDF;
+        border-radius: 5px;
+        padding: 4px;
+    }
 }
