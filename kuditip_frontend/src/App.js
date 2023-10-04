@@ -13,6 +13,7 @@ import UnlockFeatures from './page_components/UnlockFeatures';
 import MyPageHeader from './page_components/MyPageHeader';
 import Settings from './page_components/Settings';
 import Payment from './page_components/Payment';
+import Gallery from './page_components/Gallery';
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
       <Route path='/interest' element={<Interest/>}/>
       <Route path='/unlockFeatures' element={<UnlockFeatures/>}/> 
       <Route path='MyPageHeader/myPage' element={<MyPageHeader/>}/>
-      <Route path='/' element={<Settings/>}/>
+      <Route path='/Settings' element={<Settings/>}/>
       <Route path='/Payment' element={<Payment/>}/>
+      <Route path='/' element={<Gallery/>}/>
      </Routes>
     </div>
   );

@@ -1,3 +1,4 @@
+/* Start of top icon */
 .header-icon{
     display: flex;
     margin-left: 5%;
@@ -11,6 +12,7 @@
 .navicon{
     display: none;
 }
+/* Start of top icon */
 .container{
     display: flex;
     gap: 30px;
@@ -62,17 +64,9 @@
     padding-right: 10px;
 }
 
-/* .content{
-    align-items: center;
-    width: 252px;
-    height: 215px;
-}
 
-.input{
-    border-radius: 3px;
-    border: solid rgb(0, 4, 8);
-    box-shadow:  1px 2px 2px rgb(183, 175, 177);
-} */
+
+
 @media only screen and (max-width: 480px) {
     .header-right{
         display: none;

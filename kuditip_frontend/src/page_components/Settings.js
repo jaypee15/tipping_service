@@ -29,8 +29,8 @@ const Settings = () => {
             {/* End of top icon */}
             </div>  
             <div className='navicon'><img src={navicon} />
-                <a href=''>
-                <img src={lilian} /></a></div> 
+                <a href=''></a>
+                <img src={lilian} /></div> 
         </header >
 
          {/* Start of Navigation bar */}
@@ -52,7 +52,7 @@ const Settings = () => {
                 {/* End of Navigation bar */}
 
             {/* Start of Registration form */}
-            {/* <div className='content'>
+            <div className='content'>
                 <div>
                     <img src={fixed}/>
                 </div>
@@ -67,7 +67,7 @@ const Settings = () => {
                 <p>Username</p>
                 <input type="email" id="name" name="name" placeholder="Email address" />
                 <p>About you</p>
-            </div> */}
+            </div>
         </div>
     </div>
    
