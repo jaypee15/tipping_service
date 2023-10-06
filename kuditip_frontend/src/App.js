@@ -19,6 +19,9 @@ import Message from './page_components/Message';
 import Membership from './page_components/Membership';
 import FAQ from './page_components/FAQ';
 import Error from './page_components/Error';
+import Explore from './page_components/Explore';
+import AboutUs from './page_components/AboutUs';
+
 
 
 function App() {
@@ -43,7 +46,10 @@ function App() {
       <Route path='/Message' element={<Message/>}/>
       <Route path='/Membership' element={<Membership/>}/>
       <Route path='/FAQ' element={<FAQ/>}/>
-      <Route path='/' element={<Error/>}/>
+      <Route path='/ghhh' element={<Error/>}/>
+      <Route path='/myPage' element={<MyPageHeader/>}/>
+      <Route path='/Explore' element={<Explore/>}/>
+      <Route path='/' element={<AboutUs/>}/>
      </Routes>
     </div>
   );
