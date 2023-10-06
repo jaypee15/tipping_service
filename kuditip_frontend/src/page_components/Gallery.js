@@ -4,7 +4,6 @@ import search from "../images/search.png"
 import xicon from "../images/xicon.png"
 import majesticicons_plus from "../images/majesticons_plus.png"
 import soundicon from "../images/soundicon.png"
-import frame54 from "../images/Frame54.png"
 
 
 const Gallery = () => {
@@ -18,7 +17,7 @@ const Gallery = () => {
                 <a href=''><p>Add image</p></a>
             </div>
          </div>
-        <div className='heading-item2'>
+        <div className='heading-item3'>
             <img src={search} />
             <p>Search</p>
             <div className='heading-icon'>
@@ -35,11 +34,13 @@ const Gallery = () => {
          </div>
          {/* End of page heading */}
 
-        <div className='container'>
+        {/* Start of content */}
+        <div className='contain'>
             <img src={soundicon} />
             <h4>Create your first post</h4>
             <p>You can share your work, inspirations, or behind-the-scenes images with everyone or reserve them exclusively for your members. Creators who consistently update their galleries often receive more support.</p>
         </div>
+        {/* End of content */}
        
       
     </div>

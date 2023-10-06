@@ -9,7 +9,7 @@ const Payment = () => {
   return (
     <div>
         {/* Start of page container */}
-        <div className='container'>
+        <div className='payment-body'>
                 <h1>Payout</h1>
                 <p>Oversee and access you payment settings. </p>
             
@@ -38,7 +38,7 @@ const Payment = () => {
                     <a href=''><p>Connected</p></a>
                 </div>
             </div>
-            <div clasName='sub-container1'>
+            <div clasName='payment-history'>
                 <h2>Payment history</h2>
                 <p>View the payment history</p>
                 <div className='history'>

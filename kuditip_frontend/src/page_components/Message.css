@@ -1,6 +1,6 @@
-h5{
+/* h5{
     font-weight: 700;
-}
+} */
 
 /* Start of page heading */
 .heading{
@@ -8,29 +8,10 @@ h5{
     display: flex;
     align-items: center;
 }
-.heading-item{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
-    background-color: #1BAEDF;
-    border-radius: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 0px;
+.heading h5{
+    font-weight: 700;
 }
-.heading-item img{
-    width: 20px;
-    height: 20px;
-    align-items: center;
-}
-.heading-item a{
-    color: white;
-    text-decoration: none;
-}
-.heading-item p{
-    font-size: 10px;
-}
+
 .heading-item3{
     display: flex;
     gap: 20px;
@@ -43,9 +24,27 @@ h5{
 }
 .heading-icon{
     margin-left: auto;
+    display: flex;
+    gap: 30px;
 }
-.heading-mobile{
-    display: none;
+.bottom-btn1{ 
+    width: 200px;
+    justify-content: center;
+    margin-left: 250px;
+    align-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding-left:  10px;
+    padding-right: 10px;
+    box-sizing: content-box;
+}
+.bottom-btn1 img{
+    width: 30px;
+    height: 30px;
 }
 /* End of page heading */
 
@@ -54,8 +53,8 @@ h5{
     left:0;
     right:0;
   
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   
     position: absolute;
     width: 50%;
@@ -96,12 +95,13 @@ h5{
         .contain p{
             font-size: 18px;
         }
-        .heading-mobile {
-            display: block;
-            display: flex;
+        .bottom-btn1{
+            margin: 0;
+            width: auto;
             align-items: center;
-        }
-        .heading-item2 {
-            display: none;
+            text-align: center;
+    
+
+
         }
     }

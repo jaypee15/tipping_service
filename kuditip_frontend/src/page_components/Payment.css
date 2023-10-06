@@ -1,22 +1,22 @@
-.container{
-    width: 920px;
+.payment-body{
+    width: 100%;
     max-width: 920px;
     margin-left: 30%;
 }
-p{
+.payment-body p{
     font-size: 15px;
 }
-h1{
+.payment-body h1{
     font-weight: 500;
     font-size: 30px;
     margin: 0;
 }
-h2{
+.payment-body h2{
     font-weight: 500;
     font-size: 25px;
     margin: 0;
 }
-h5{
+.payment-body h5{
     font-weight: 500;
 }
 .payment-method{
@@ -28,6 +28,7 @@ h5{
 .payment-method{
     border: #1BAEDF;
     border-radius: 5px;
+    margin-left: 10px;
 }
 .payment-method a{
     text-decoration: none;
@@ -44,6 +45,7 @@ h5{
     border: 1px solid #00000080;
     margin-bottom: 10px;
     justify-content: start;
+
 }
 .sub-container-item{
     flex-direction: column;
@@ -78,10 +80,11 @@ h5{
     text-decoration: none;
     color: #ffffff;
 }
-.sub-container1{
+.payment-history{
     width: 100%;
     border: 3px solid #00000080;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-right: 20px;
 }
 .history{
     display: flex;
@@ -92,4 +95,40 @@ h5{
 .history-item{
     padding: 5px 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .payment-body{
+        margin: 0;
+        padding: 10px;
+    }
+    .sub-container{
+        width: 100%;
+    }
+    .btn{
+        padding: 0px 3px;
+        margin-left: 120px;
+    }
+    .btn1{
+        padding: 0px 3px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .payment-body{
+        margin: 0;
+        padding: 10px;
+    }
+    .sub-container{
+        width: 100%;
+    }
+    .btn{
+        padding: 0px 3px;
+        margin-left: 100px;
+    }
+    .btn1{
+        padding: 0px 3px;
+        margin-left: 90px;
+    }
 }

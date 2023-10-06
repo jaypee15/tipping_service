@@ -34,7 +34,7 @@ const Settings = () => {
         </header >
 
          {/* Start of Navigation bar */}
-        <div className='container'>
+        <div className='page'>
             <div class="navbar">
                 <ul>
                     <div className='homeicon'><li><a href=""><img src={homeicon} />Home</a></li></div>
@@ -52,21 +52,36 @@ const Settings = () => {
                 {/* End of Navigation bar */}
 
             {/* Start of Registration form */}
-            <div className='content'>
-                <div>
+            <div className='sub-content'>
+                <div className='overlay'>
                     <img src={fixed}/>
+                    <div className='upload'>
+                        <a href=''><img src={upload} /></a>
+                    </div>
                 </div>
-                <div className='upload'>
-                    <img src={upload} />
+                <div className='input-ele'>
+                    <p>Name</p>
+                    <div className='input-pos'>
+                        <input type="email" id="name" name="name"  placeholder="Lilian" />
+                    </div>
+                    <p>Username</p>
+                    <div className='input-pos'>
+                        <input type="text"       id="name" name="name" placeholder="KudiTip/Lilian" />
+                    </div>
+                    <p>About you</p>
+                    <div className='input-post'>
+                        <input type="text" name="input" />
+                    </div>
+                    <p>What do you do</p>
+                    <div className='input-post1'>
+                        <input type="text" name="input" />
+                    </div>
+                    <p>Website</p>
+                    <div className='input-post1'>
+                        <input type="text" name="input" />
+                    </div>
                 </div>
-                <div className='inputs'>
-                    <input type='text'/>
-                </div>
-                <p>Name</p>
-                <input type="email" id="name" name="name" placeholder="Email address" />
-                <p>Username</p>
-                <input type="email" id="name" name="name" placeholder="Email address" />
-                <p>About you</p>
+
             </div>
         </div>
     </div>
