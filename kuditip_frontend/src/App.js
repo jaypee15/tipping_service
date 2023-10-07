@@ -30,8 +30,8 @@ function App() {
       <Route path='/interest' element={<Interest/>}/>
       <Route path='/unlockFeatures' element={<UnlockFeatures/>}/> 
       <Route path='/myPage' element={<MyPageHeader/>}/>
-      <Route path='/Explore' element={<Explore/>}/>
-      <Route path='/' element={<AboutUs/>}/>
+      <Route path='/' element={<Explore/>}/>
+      <Route path='/hgfg' element={<AboutUs/>}/>
      </Routes>
     </div>
   );

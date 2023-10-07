@@ -1,4 +1,4 @@
-const Button = ({text, earnPlanStyle, skip, type, onClick}) => {
+const Button = ({text, earnPlanStyle, skip, type, onClick, className}) => {
   const skipButton = {
     borderColor: '#fff',
     color: '#1BAEDF',
@@ -6,13 +6,16 @@ const Button = ({text, earnPlanStyle, skip, type, onClick}) => {
   }
 
   return (
-    <button style={skip ? skipButton : earnPlanStyle}
+    <button 
+    // style={skip ? skipButton : earnPlanStyle}
+    className={className}
       type={type ?? "submit"}
       onClick={onClick}
     >
       {text}
     </button>
-
   )
 }
  export default Button
+
+

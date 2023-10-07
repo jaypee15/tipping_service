@@ -15,32 +15,17 @@ import Software from "../images/Software.png"
 import Aartists from "../images/Aartists.png"
 import landingmobile from "../images/landingmobile.png"
 import Groupicon from "../images/Groupicon.png"
+import Header from '../components/Header'
+import Button from '../unit_components/Button'
 
 
 const Explore = () => {
 
   return (
     <div>
-          <div>
-    {/* Start of navigation */}
-        <header class="nav-icon">
-            <div class="nav-icon-left">
-                <div id="logo">
-                <img src={textlogo} />
-                </div>
-            </div>
-            <div class="nav-icon-right">
-                <p><a href="">Explore</a></p>
-                <p><a href="">About Us</a></p>
-                <p><a href="">Blog</a></p>
-                <p><a href="">Log In</a></p>
-                <div class="btn"><a href="">Sign Up</a></div>
-            </div>
-            <div class="menu-bar"><i class="fas fa-bars"></i></div>
-        {/* End of navigation */}
-    </header>
-    </div>
-    {/* Start of landing */}
+        {/* navigation */}
+        <Header />
+        {/* Start of landing */}
         <div class="landing">
             <img src={landing} />
         </div>
@@ -51,7 +36,7 @@ const Explore = () => {
                     </div>
                 <div class='search'>
                     <input type="text" placeholder='KudTip/yourname'/>
-                    <a href="" class="btn">Search</a>
+                    <Button text="Search" className="btn" />
                 </div>
             </div>
     {/* End of landing */}
