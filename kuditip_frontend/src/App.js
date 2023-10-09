@@ -21,6 +21,7 @@ import FAQ from './page_components/FAQ';
 import Error from './page_components/Error';
 import Explore from './page_components/Explore';
 import AboutUs from './page_components/AboutUs';
+import MyAccount from './page_components/MyAccount';
 
 
 
@@ -48,8 +49,9 @@ function App() {
       <Route path='/FAQ' element={<FAQ/>}/>
       <Route path='/ghhh' element={<Error/>}/>
       <Route path='/myPage' element={<MyPageHeader/>}/>
-      <Route path='/Explore' element={<Explore/>}/>
-      <Route path='/' element={<AboutUs/>}/>
+      <Route path='/explore' element={<Explore/>}/>
+      <Route path='/AboutUs' element={<AboutUs/>}/>
+      <Route path='/' element={<MyAccount/>}/>
      </Routes>
     </div>
   );

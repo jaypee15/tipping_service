@@ -35,10 +35,10 @@ const Donation = () => {
                 {/*End of content1 */}
 
             {/* Start of content2 */}
-            <div className='content'>
+            <div className='content2'>
                 <h5>You don’t have supporters yet</h5>
                 <p>Share your page to earn more.</p>
-                <div className='content-item'>
+                <div className='content-item2'>
                     <img src={linkicon} />
                     <a href=''><p>Copy link</p></a>
                 </div>

@@ -1,4 +1,4 @@
-const Button = ({text, earnPlanStyle, skip, type, onClick}) => {
+const Button = ({text, earnPlanStyle, skip, type, onClick, className}) => {
   const skipButton = {
     borderColor: '#fff',
     color: '#1BAEDF',

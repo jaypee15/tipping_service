@@ -15,6 +15,9 @@ import Software from "../images/Software.png"
 import Aartists from "../images/Aartists.png"
 import landingmobile from "../images/landingmobile.png"
 import Groupicon from "../images/Groupicon.png"
+import Header from '../components/Header'
+import Button from '../unit_components/Button'
+import Footer from '../components/Footer'
 
 
 const Explore = () => {
@@ -23,22 +26,7 @@ const Explore = () => {
     <div>
           <div>
     {/* Start of navigation */}
-        <header class="nav-icon">
-            <div class="nav-icon-left">
-                <div id="logo">
-                <img src={textlogo} />
-                </div>
-            </div>
-            <div class="nav-icon-right">
-                <p><a href="">Explore</a></p>
-                <p><a href="">About Us</a></p>
-                <p><a href="">Blog</a></p>
-                <p><a href="">Log In</a></p>
-                <div class="btn"><a href="">Sign Up</a></div>
-            </div>
-            <div class="menu-bar"><i class="fas fa-bars"></i></div>
-        {/* End of navigation */}
-    </header>
+    <Header />
     </div>
     {/* Start of landing */}
         <div class="landing">
@@ -51,132 +39,133 @@ const Explore = () => {
                     </div>
                 <div class='search'>
                     <input type="text" placeholder='KudTip/yourname'/>
-                    <a href="" class="btn">Search</a>
+                    <Button text="Search" className="btn" />
                 </div>
             </div>
     {/* End of landing */}
 
     {/* Start of features */}
-        <section class="content">
-            <div class="content-item"><p><a href="">Blogging <img src={blog} /></a></p>
+        <section className="content">
+            <div className="content-item"><p><a href="">Blogging <img src={blog} /></a></p>
             </div>
-            <div class="content-item"><p><a href="">Designs <img src={design} /></a></p>
+            <div className="content-item"><p><a href="">Designs <img src={design} /></a></p>
             </div>
-            <div class="content-item"><p><a href="">Softwares <img src={Software} /></a></p>
+            <div className="content-item"><p><a href="">Softwares <img src={Software} /></a></p>
             </div>
-            <div class="content-item"><p><a href="">Artists <img src={Aartists} /></a></p>
+            <div className="content-item"><p><a href="">Artists <img src={Aartists} /></a></p>
             </div>
-            <div class="content-item2"><p><a href=""> <img src={Groupicon} /></a></p>
+            <div className="content-item3"><p><a href=""> <img src={Groupicon} /></a></p>
             </div>
-            <div class="content-item1"><p><a href="">Blogging <img src={blog} /></a></p>
+            <div className="content-item1"><p><a href="">Blogging <img src={blog} /></a></p>
             </div>
         </section>
     {/* End of features */}
 
     {/* Start of features section1 */}
-        <div class="content-text">
+        <div className="content-text">
             <div class="content-text-left">
                 <p><a href="">Popular Content</a></p>
             </div>
-            <div class="content-text-right">
+            <div className="content-text-right">
                 <p><a href="">See all</a></p>
             </div>
         </div>
-        <section id="features" >
-            <div className='features'>
+        <section id="feature" >
+            <div className='feature'>
                 <img src={feature1} />
                 <img src={feature2} />
                 <img src={feature3} />
                 </div>
-                <div className='features1'><img src={feature1} /></div>
+                <div className='feature1'><img src={feature1} /></div>
         </section>
     {/* End of features section1 */}
 
     {/* Start of features section2 */}
-        <div class="content-text">
+        <div className="content-text">
             <div class="content-text-left">
                 <p><a href="">KudiTip Featured creators</a></p>
             </div>
-            <div class="content-text-right">
+            <div className="content-text-right">
                 <p><a href="">See all</a></p>
             </div>
         </div>
-        <section id="features">
-            <div class="features-item">
+        <section id="feature">
+            <div className="feature-item">
                 <img src={feature4} />
                 <h4>Sarah Lonnie</h4>
                 <h5>4.1k followers</h5>
                 <p>Hello, Im Sarah. I'm a mid 30</p>
                 <p>A sport Analyst...</p>
                 <p>Sport Analyst</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                 </div>
             </div>
-            <div class="features-item">
+            <div className="feature-item">
                 <img src={featuree5} />
                 <h4>Kole Olawale</h4>
                 <h5>5.1k followers</h5>
                 <p>Hello, Im Kole. I'm a mid 20</p>
                 <p>A Relationship doctor...</p>
                 <p>Podcaster</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                 </div>
             </div>
-            <div class="features-item">
+            <div className="feature-item">
                 <img src={feature6} />
                     <h4>Ibrahim Balogun</h4>
                     <h5>20k followers</h5>
                     <p>Hello, I'm Wizkid. I'm a late 20</p>
                     <p>A world superstar</p>
                     <p>Music Artist</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                  </div>
                 
             </div>
-            <div className='features1'>
+            <div className='feature1'>
             <img src={feature4} />
                 <h4>Sarah Lonnie</h4>
                 <h5>4.1k followers</h5>
                 <p>Hello, Im Sarah. I'm a mid 30</p>
                 <p>A sport Analyst...</p>
                 <p>Sport Analyst</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                 </div> </div>
         </section>
     {/* End of features section2*/}
 
     {/* Start of footer */}
-        <footer id="footer-menu">
-            <div class="footer-menu">
+    <Footer />
+        {/* <footer id="footer-menu">
+            <div className="footer-menu">
                 <div class="footer-menu-item1">
                     <img src={logo2} />
                     <p>KudiTip</p>
                 </div>
-                <div class="footer-menu-item">
+                <div className="footer-menu-item">
                     <h4>About KudiTip</h4>
                     <p><a href="">Who are we</a></p>
                     <p><a href="">Terms and Conditions</a></p>
                     <p><a href="">Privacy policy</a></p>
                 </div>
-                <div class="footer-menu-item">
+                <div className="footer-menu-item">
                     <h4>Use KudiTip with</h4>
                     <p><a href="">Twitter</a></p>
                     <p><a href="">Instagram</a></p>
                     <p><a href="">Facebook</a></p>
                     <p><a href="">YouTube</a></p>
                 </div>
-                <div class="footer-menu-item">
+                <div className="footer-menu-item">
                     <h4>Resources</h4>
                     <p><a href="">Become a creator</a></p>
                     <p><a href="">Membership</a></p>
                     <p><a href="">Donations</a></p>
                     <p><a href="">KudiTip shop and commission</a></p>
                 </div>
-                <div class="footer-menu-item">
+                <div className="footer-menu-item">
                     <h4>Help & Support</h4>
                     <p><a href="">Help</a></p>
                     <p><a href="">F.A.Q</a></p>
@@ -184,13 +173,13 @@ const Explore = () => {
                 </div>
             </div>
             <hr />
-            <div class="bottom-footer">
-                <p><i class="fa fa-copyright"></i>2023</p>
+            <div className="bottom-footer">
+                <p><i className="fa fa-copyright"></i>2023</p>
                 <img src={logo2} />
                 <p>KudiTip</p>
             </div>
         
-        </footer>
+        </footer> */}
     {/* End of footer */}
    </div>
     
