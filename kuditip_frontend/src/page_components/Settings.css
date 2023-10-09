@@ -1,18 +1,26 @@
 /* Start of top icon */
-.header-icon{
+.navbar{
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.57);
+    width: 220px;
+    /* height: 560px; */
+    list-style-type: none;
+    padding: 0 15px;
+    /* margin-bottom: 20px; */
+    /* margin-top: 20px; */
+    /* float: left; */
+    margin-left: 0;
+    justify-content: end;
+    /* margin-top: 10px; */
+    /* position: fixed; */
+}
+.nav {
     display: flex;
-    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    line-height: none;
+    justify-content: start;
+
 }
-.homeicon img{
-    width: 100px;
-}
-.header-left img{
-    width: 90px;
-}
-.navicon{
-    display: none;
-}
-/* Start of top icon */
 .page{
     display: flex;
     gap: 30px;
@@ -37,17 +45,7 @@
     width: 30px;
     height: 30px;
 }
-.navbar{
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.57);
-    width: 220px;
-    height: 560px;
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    float: left;
-    margin-left: 0
-}
+
 .navbar li{
     display: block;
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Error.css"
 import Error404 from "../images/Error404.png"
+import Button from '../unit_components/Button'
+import FooterBottom from '../components/FooterBottom'
 
 const Error = () => {
   return (
@@ -12,13 +14,12 @@ const Error = () => {
             </div>
             <div className='message-text'>
                 <h5>Oops! the page you’re looking could not be found</h5>
-                <div className='message-button'>
-                    <a href=''><p>Go to Homepage</p></a>
-                </div>
+                <Button text="Go to Homepage" skip={true} className='home-button'/>   
             </div>
+            
         </div>
         {/* End of error404 message */}
-      
+        <FooterBottom companyName={'#2172A3'} fill='#2172A3' />
     </div>
   )
 }

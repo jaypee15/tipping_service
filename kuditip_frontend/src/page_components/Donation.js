@@ -4,10 +4,12 @@ import loveicon from "../images/loveicon.png"
 import nairaicon from "../images/nairaicon.png"
 import solar_bag from "../images/solar_bag.png"
 import linkicon from "../images/linkicon.png"
+import MyPageHeader from '../components/MyPageHeader'
 
 const Donation = () => {
   return (
     <div> 
+        <MyPageHeader showAllNav={false}/>
         {/* Start of body */}
         <div className='body'>  
                 {/* Start of content1 */}
