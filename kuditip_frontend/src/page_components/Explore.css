@@ -44,8 +44,8 @@ body{
 .btn a{
     color: white;
 }
-.btn a:hover{
-    color: white;
+.btn:hover{
+    color: red;
 }
 /* End of navigation */
 

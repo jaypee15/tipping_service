@@ -35,7 +35,7 @@ const Header = () => {
 
                 <NavLink>Explore</NavLink>
 
-                <NavLink>About Us</NavLink>
+                <NavLink to='/aboutUs'>About Us</NavLink>
 
                 <NavLink>Blog</NavLink>
 

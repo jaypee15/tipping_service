@@ -3,32 +3,40 @@ import "./Message.css"
 import search from "../images/search.png"
 import inbox_outline from "../images/inbox-outline.png"
 import majesticons_plus1 from "../images/majesticons_plus1.png"
+import MyPageHeader from '../components/MyPageHeader'
+import SideBar from '../components/SideBar'
 
 const Message = () => {
   return (
     <div>
+        <MyPageHeader />
         {/* Start of page heading */}
-        <div className='heading'>
-            <h5>Messages</h5>
-         </div>
-        <div className='heading-item3'>
-            <p>All</p>
-            <div className='heading-icon'>
-                <img src={majesticons_plus1} />
-                <img src={search} />
-            </div>
-         </div>
-         {/* End of page heading */}
+        <div className='page_content'>
+            <SideBar />
+            <div>
+                <div className='heading'>
+                    <h5>Messages</h5>
+                </div>
+                <div className='heading-item3'>
+                    <p>All</p>
+                    <div className='heading-icon'>
+                        <img src={majesticons_plus1} />
+                        <img src={search} />
+                    </div>
+                </div>
+                {/* End of page heading */}
 
-        {/* Start of content */}
-        <div className='contain'>
-            <img src={inbox_outline} />
-            <h4>No messages yet</h4>
-            <p>Either send a private message or distribute a message to all of your supporters or members.</p>
+                {/* Start of content */}
+                <div className='contain'>
+                    <img src={inbox_outline} />
+                    <h4>No messages yet</h4>
+                    <p>Either send a private message or distribute a message to all of your supporters or members.</p>
 
-            <div className='bottom-btn1'>
-                <img src={majesticons_plus1} />
-                <p>New message</p>
+                    <div className='bottom-btn1'>
+                        <img src={majesticons_plus1} />
+                        <p>New message</p>
+                    </div>
+                </div>
             </div>
         </div>
         {/* End of content */}

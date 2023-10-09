@@ -1,16 +1,15 @@
 import React from 'react';
-import logo from '../images/frame_12.png'
 import './Footer.css';
 
 import { Link } from 'react-router-dom';
+import LogoWithName from '../svg/LogoWithName';
+import FooterBottom from './FooterBottom';
 
 const Footer = () => {
   return (
     <div className='footer-container'>
       <div className='footer'>
-        <div>
-          <img src={logo} alt="Logo" />
-        </div>
+        <LogoWithName Kcolor='#fff'/>
         <div>
           <h5>About KudiTip</h5>
           <Link to="#">Who are we?</Link> <br />
@@ -38,14 +37,7 @@ const Footer = () => {
           <Link to="#">Contact us</Link>
         </div>
       </div>
-      <div className='bottom'>
-        <hr />
-              <div className='lastitmes'>
-              <p>@2023</p>
-              <img src={logo} alt="logo" />
-           </div>
-
-        </div>
+      <FooterBottom />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-// import './SignUp.css';
 import './SetAccount.css';
 import { Link, useNavigate } from "react-router-dom";
 import TextInput from "../unit_components/TextInput";
@@ -62,7 +61,7 @@ const SignUp = () => {
 
                 <PasswordInput getPassword={getPassword}/>
 
-                <Button text='Create account'/>
+                <Button text='Create account' className={"button"} />
 
             </form> 
 
