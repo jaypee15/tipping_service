@@ -1,0 +1,134 @@
+.payment-body{
+    width: 100%;
+    max-width: 920px;
+    margin-left: 30%;
+}
+.payment-body p{
+    font-size: 15px;
+}
+.payment-body h1{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+}
+.payment-body h2{
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+}
+.payment-body h5{
+    font-weight: 500;
+}
+.payment-method{
+    display: flex;
+}
+.edit{
+    margin-left: auto;
+}
+.payment-method{
+    border: #1BAEDF;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.payment-method a{
+    text-decoration: none;
+    border: 1px solid #1BAEDF;
+    border-radius: 5px;
+    padding: 1px 3px;
+    font-size: 18px;
+    color: #1BAEDF;
+}
+.sub-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #00000080;
+    margin-bottom: 10px;
+    justify-content: start;
+
+}
+.sub-container-item{
+    flex-direction: column;
+}
+.sub-container-item1{
+    flex-direction: column;
+}
+.sub-container img{
+    width: 20px;
+    height: 20px;
+    padding: 5px 20px;
+}
+.btn{
+    border: 1px solid#1BAEDF;
+    border-radius: 5px;
+    padding: 0px 3px;
+    margin-left: 130px;
+}
+.btn1{
+    border: 1px solid#1BAEDF;
+    border-radius: 5px;
+    padding: 0px 3px;
+    margin-left: 130px;
+    background-color: #1BAEDF; 
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.57);
+}
+.btn a{
+    text-decoration: none;
+    color: #1BAEDF;
+}
+.btn1 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.payment-history{
+    width: 100%;
+    border: 3px solid #00000080;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+.history{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+    border: 1px solid #00000080;
+}
+.history-item{
+    padding: 5px 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .payment-body{
+        margin: 0;
+        padding: 10px;
+    }
+    .sub-container{
+        width: 100%;
+    }
+    .btn{
+        padding: 0px 3px;
+        margin-left: 120px;
+    }
+    .btn1{
+        padding: 0px 3px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .payment-body{
+        margin: 0;
+        padding: 10px;
+    }
+    .sub-container{
+        width: 100%;
+    }
+    .btn{
+        padding: 0px 3px;
+        margin-left: 100px;
+    }
+    .btn1{
+        padding: 0px 3px;
+        margin-left: 90px;
+    }
+}
