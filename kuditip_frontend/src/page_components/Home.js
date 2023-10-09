@@ -10,6 +10,7 @@ import tree from '../images/tree.png'
 import { Link } from "react-router-dom";
 import "./Home.css"
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -139,6 +140,7 @@ function Home() {
             </div>
         </div>
     </div>
+    <Footer />
        {/*end of create kudi page */}
     </>
   )

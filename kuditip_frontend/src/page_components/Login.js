@@ -55,7 +55,7 @@ const Login = () => {
 
           <EmailInput getEmail={getEmail} />
           <PasswordInput getPassword={getPassword} />
-          <Button text='Login'/>
+          <Button text='Login' className={"Button"}/>
           <GoogleCreate/>
           <p>Forgot your password?</p>
 

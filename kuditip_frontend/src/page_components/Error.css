@@ -27,19 +27,20 @@
     padding: 5px 10px;
     width: 130px;
 }
-.message-button{
-    padding: 10px;
+.home-button{
+    border: 2px solid #1BAEDF !important;
+    width: 31% !important;
 }
-.message-button a{
+/* .home-button a{
     margin-top: 0;
     text-decoration: none;
     color: #1BAEDF;
 }
-.message-text h5{
+.home-text h5{
     font-weight: 400;
     font-size: 30px;
     text-align: left;
-}
+} */
 
 /* For media query */
 @media only screen and (max-width: 650px) {
@@ -67,12 +68,13 @@
         padding-left: 4px;
         width: 130px;
     }
-    .message-button a{
+    .home-button a{
         text-align: left;
         text-decoration: none;
         color: white;
     }
-    .message-text{
+    .home-text{
         max-width: 60%;
     }
 }
+

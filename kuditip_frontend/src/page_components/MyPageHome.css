@@ -1,52 +1,72 @@
 .add-a-cover-iamge1{
     background-color: rgb(192, 233, 249);
-    padding: 5rem;
+    padding: 6rem;
     margin-top: 2rem;
 }
 .add-a-cover-iamge2{
     display: flex;
     width: 200px;
     height: 45px;
-    margin: 0 auto;
+    margin: auto;
     color: white;
     gap: 10px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(61, 179, 226);;
+    background-color: rgb(61, 179, 226);
 }
 
-.lilain-icon{
+.add-a-cover-iamge2 p{
+    align-items: center;
+    font-size: 1rem;
+}
+
+.member-icon{
     display: flex;
     justify-content: space-between;
-  
+    margin: 0 5rem; 
 }
 
- .lilian-img img{
-   position: relative ;
-   bottom: 3pc;
-   margin-left: 4rem;
-   width: 125px;
+.member-img {
+   position: relative ; 
 }
-.lilian-img h4{
+
+ .member-img img{
+   margin-left: 4rem;
+    margin-top: -37px;
+   width: 125px;
+   height: 125px;
+   border-radius: 100%;
+   border: solid 1px rgb(61, 179, 226);
+}
+
+.camera-icon {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    padding: 5px;
+}
+
+.member-img h4{
    text-align: center;
    color: rgb(25, 170, 227);
    font-size: 20px;
-   margin-top: -37px;
    margin-left: 3rem;
 }
-.lilain-icon-btn p{
+.followed-btn{
     background-color: rgb(25, 170, 227);
-    border-bottom: 2px rgb(235, 172, 127) solid;
-    margin-right: 3rem;
+    border: none;
+    box-shadow: 2px 2px 6px 0px #3c3b3b;
+    margin-top: 3rem;
     color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 11px;
 }
 
-.Gift-Lilian-Kudicash{
+.Gift-member-Kudicash{
     display: flex;
     justify-content: space-between;
+    margin: 0 5rem; 
 }
 
 .bio{
@@ -126,7 +146,7 @@
     padding: 5px;
 
  }
- .Leave-a-message input {
+ .Leave-a-message textarea {
     color: rgb(25, 170, 227); 
     margin-top: 20px;
     height: 150px;
@@ -134,11 +154,15 @@
     border: 2px solid rgb(25, 170, 227);
     border-radius: 10px;
     outline: none;
+    resize: none;
  }
- .Leave-a-message input::placeholder{
-    margin-top: 20px;
+ .Leave-a-message textarea::placeholder{
+    color: rgb(25, 170, 227); 
  }
 
- /* .Leave-a-message {
-  
- } */
+ .tip_kudicash_btn {
+    margin-top: .5rem;
+    width: 100%;
+    background-color: rgb(25, 170, 227);
+ }
+

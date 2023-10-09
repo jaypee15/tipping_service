@@ -3,6 +3,10 @@
 } */
 
 /* Start of page heading */
+.page_content {
+    display: block;
+    background-color: yellow;
+}
 .heading{
     margin-top: 20px;
     display: flex;
@@ -14,14 +18,16 @@
 
 .heading-item3{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    /* gap: 20px; */
     align-items: center;
 }
-.heading-item3 img{
+
+/* .heading-item3 img{
     width: 20px;
     height: 20px;
     align-items: center;
-}
+} */
 .heading-icon{
     margin-left: auto;
     display: flex;
@@ -50,11 +56,12 @@
 
 /* Start of content  */
 .contain{
-    left:0;
-    right:0;
+    /* left:0;
+    right:0; */
   
-    /* margin-left: auto;
-    margin-right: auto; */
+    /* margin-left: auto; */
+    margin: auto;
+    background-color: red;
   
     position: absolute;
     width: 50%;
