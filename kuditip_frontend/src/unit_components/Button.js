@@ -13,6 +13,7 @@ const regularButton = {
 }
 const Button = ({text, earnPlanStyle, skip, regular, type, onClick, className = null}) => {
 
+
   const btnDisplayStyle = skip ? skipButton ? regular : regularButton : '';
 
   const defaultStyle = {fontWeight: 'bold', color: '#fff', fontSize: '1em', cursor: 'pointer', borderRadius: '10px', padding: '10px', border: 'none', backgroundColor: 'rgb(25, 170, 227)'};

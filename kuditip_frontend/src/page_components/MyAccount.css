@@ -1,0 +1,136 @@
+.earning-top{
+    border: 2px solid#00000033;
+    padding: 20px 15px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.57);
+}
+.earning-profile{
+    display: flex;
+    align-items: center;
+}
+.earning-user{
+    display: flex;
+    gap: 20px;
+}
+.earning-user img{
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+.earning-user-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.earning-btn{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    border: 2px solid#1BAEDF;
+    border-radius: 10px;
+    padding: 10px 30px;
+    
+}
+.earning-btn a{
+    text-decoration: none;
+    color: #1BAEDF;
+}
+.earning{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.earning1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #1BAEDF;
+    border-radius: 10px;
+    padding: 0px 20px;
+    color: #1BAEDF;
+    align-items: center;
+    text-align: center;
+}
+.earning p{
+    /* border: 2px solid #1BAEDF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #1BAEDF; */
+}
+
+.earning-item{
+    display: flex;
+    justify-content: space-between;
+}
+.earning-item1{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.share{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 30px;
+    border: 2px solid #00000033;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.57);
+}
+.share-item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 40px 20px;
+    border: 2px solid #00000033;
+}
+.share-item1 p{
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.earning-btn1{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border: 2px solid#1BAEDF;
+    border-radius: 10px;
+    padding: 10px 30px;
+    
+}
+.earning-btn1 p{
+    color: #1BAEDF;
+}
+
+.earn-text{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.earning-last-item{
+    border: 2px solid #00000033;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.earning-last-item{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+.earning-last-item2{
+    display: flex;
+    gap: 20px;
+    border: 2px solid #00000033;
+    padding: 20px 60px;
+    align-items: center;
+    box-shadow: 0px 1px 0px 0px rgba(71, 68, 68, 0.57);
+}
+h3{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}

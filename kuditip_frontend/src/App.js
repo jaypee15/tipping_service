@@ -21,8 +21,10 @@ import FAQ from './page_components/FAQ';
 import Error from './page_components/Error';
 import Explore from './page_components/Explore';
 import AboutUs from './page_components/AboutUs';
+import MyAccount from './page_components/MyAccount';
 import MyPageHome from './page_components/MyPageHome';
 // import MyPageHome from './components/MyPageHeader';
+
 
 
 
@@ -63,6 +65,12 @@ function App() {
       <Route path='/ghjk' element={<Gallery/>}/>
       <Route path='/n' element={<Donation/>}/>
       <Route path='/Membership' element={<Membership/>}/>
+      <Route path='/FAQ' element={<FAQ/>}/>
+      <Route path='/ghhh' element={<Error/>}/>
+      <Route path='/myPage' element={<MyPageHeader/>}/>
+      <Route path='/explore' element={<Explore/>}/>
+      <Route path='/AboutUs' element={<AboutUs/>}/>
+      <Route path='/' element={<MyAccount/>}/>
       {/* <Route path='/' element={<MyPageHeader/>}/> */}
       <Route path='/ghjk' element={<Explore/>}/>
      </Routes>
