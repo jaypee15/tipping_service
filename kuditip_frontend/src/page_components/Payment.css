@@ -1,17 +1,21 @@
+.payment{
+    display: flex;
+    gap: 20px;
+}
 .payment-body{
-    width: 100%;
-    max-width: 920px;
-    margin-left: 30%;
+    width: 75%;
 }
 .payment-body p{
     font-size: 15px;
+    padding-left: 15px;
 }
 .payment-body h1{
+    padding-left: 15px;
     font-weight: 500;
     font-size: 30px;
-    margin: 0;
 }
 .payment-body h2{
+    padding-left: 15px;
     font-weight: 500;
     font-size: 25px;
     margin: 0;
@@ -28,7 +32,6 @@
 .payment-method{
     border: #1BAEDF;
     border-radius: 5px;
-    margin-left: 10px;
 }
 .payment-method a{
     text-decoration: none;
@@ -39,11 +42,13 @@
     color: #1BAEDF;
 }
 .sub-container{
-    width: 50%;
+    width: 60%;
     display: flex;
+    gap: 15px;
     align-items: center;
     border: 1px solid #00000080;
     margin-bottom: 10px;
+    padding: 20px;
     justify-content: start;
 
 }
@@ -53,22 +58,22 @@
 .sub-container-item1{
     flex-direction: column;
 }
-.sub-container img{
+/* .sub-container img{
     width: 20px;
     height: 20px;
     padding: 5px 20px;
-}
+} */
 .btn{
     border: 1px solid#1BAEDF;
     border-radius: 5px;
     padding: 0px 3px;
-    margin-left: 130px;
+    margin-left: auto;
 }
 .btn1{
     border: 1px solid#1BAEDF;
     border-radius: 5px;
     padding: 0px 3px;
-    margin-left: 130px;
+    margin-left: auto;
     background-color: #1BAEDF; 
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.57);
 }
@@ -81,19 +86,29 @@
     color: #ffffff;
 }
 .payment-history{
-    width: 100%;
-    border: 3px solid #00000080;
-    margin-top: 0px;
-    margin-right: 20px;
+    margin-top: 10px;
+    border: 1px solid #00000080;
+}
+.payment-story{
+    height: 300px;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #00000080;
+}
+
+.payment-story p{
+    padding: 0px 15px;
 }
 .history{
+    border:  1px solid #00000080;;
     display: flex;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     justify-content: space-between;
     border: 1px solid #00000080;
 }
 .history-item{
-    padding: 5px 20px;
+    margin: auto;
     text-align: center;
 }
 
@@ -103,15 +118,15 @@
         padding: 10px;
     }
     .sub-container{
-        width: 100%;
+        width: 60%;
     }
     .btn{
         padding: 0px 3px;
-        margin-left: 120px;
+        margin-left: auto;
     }
     .btn1{
         padding: 0px 3px;
-        margin-left: 100px;
+        margin-left: auto;
     }
 }
 
@@ -121,14 +136,14 @@
         padding: 10px;
     }
     .sub-container{
-        width: 100%;
+        width: 60%;
     }
     .btn{
         padding: 0px 3px;
-        margin-left: 100px;
+        margin-left: auto;
     }
     .btn1{
         padding: 0px 3px;
-        margin-left: 90px;
+        margin-left: auto;
     }
 }
