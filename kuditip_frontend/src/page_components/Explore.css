@@ -165,21 +165,21 @@ body{
     margin-left: auto;
     padding-right: 20px;
 }
-.features{
+.feature{
     display: flex;
     gap: 20px;
     padding-left: 20px;
     align-content: center;
     padding-bottom: 20px;
 }
-#features img{
+#feature img{
     max-width: 100%;
     border-radius: 20px;
 }
-.features1{ 
+.feature1{ 
     display: none; /*features section1 media query*/
 }
-#features{
+#feature{
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -190,23 +190,23 @@ body{
     padding-bottom: 20px;
     border-radius: 20px;
 }
-.features-item p{
+.feature-item p{
     text-decoration: none;
     color: rgb(0, 4, 8);
     font-weight: 400;
     font-size: 15px;
     padding-bottom: 5px;
 }
-.features-item h5{
+.feature-item h5{
     text-decoration: none;
     color: rgb(177, 178, 180);
     padding-bottom: 5px;
     padding-top: 5px;
 }
-.features-item-left{
+.feature-item-left{
     display: flex;
 }
-.features-link a{
+.feature-link a{
     width: 45px;
     color: #1BAEDF;
     border: 1px solid #1BAEDF;
@@ -214,7 +214,7 @@ body{
     padding: 3px 5px 3px 5px;
     text-decoration: none;
 }
-.features-link {
+.feature-link {
     margin-left: auto;
 }
 /*End of features 1 and 2*/
@@ -304,13 +304,13 @@ hr{
         width: 90%;
         margin-bottom: 3rem;
     }
-    .features1 {
+    .feature1 {
         display: block;
     }
-    .features {
+    .feature {
         display: none;
     }
-    .features-item {
+    .feature-item {
         display: none;
     }
     #footer-menu {

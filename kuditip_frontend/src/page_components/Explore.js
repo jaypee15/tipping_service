@@ -23,9 +23,17 @@ const Explore = () => {
 
   return (
     <div>
+
+          <div>
+    {/* Start of navigation */}
+    <Header />
+    </div>
+    {/* Start of landing */}
+
         {/* navigation */}
-        <Header />
+        
         {/* Start of landing */}
+
         <div class="landing">
             <img src={landing} />
         </div>
@@ -42,93 +50,93 @@ const Explore = () => {
     {/* End of landing */}
 
     {/* Start of features */}
-        <section class="content">
-            <div class="content-item"><p><a href="">Blogging <img src={blog} /></a></p>
+        <section className="content">
+            <div className="content-item"><p><a href="">Blogging <img src={blog} /></a></p>
             </div>
-            <div class="content-item"><p><a href="">Designs <img src={design} /></a></p>
+            <div className="content-item"><p><a href="">Designs <img src={design} /></a></p>
             </div>
-            <div class="content-item"><p><a href="">Softwares <img src={Software} /></a></p>
+            <div className="content-item"><p><a href="">Softwares <img src={Software} /></a></p>
             </div>
-            <div class="content-item"><p><a href="">Artists <img src={Aartists} /></a></p>
+            <div className="content-item"><p><a href="">Artists <img src={Aartists} /></a></p>
             </div>
-            <div class="content-item2"><p><a href=""> <img src={Groupicon} /></a></p>
+            <div className="content-item3"><p><a href=""> <img src={Groupicon} /></a></p>
             </div>
-            <div class="content-item1"><p><a href="">Blogging <img src={blog} /></a></p>
+            <div className="content-item1"><p><a href="">Blogging <img src={blog} /></a></p>
             </div>
         </section>
     {/* End of features */}
 
     {/* Start of features section1 */}
-        <div class="content-text">
+        <div className="content-text">
             <div class="content-text-left">
                 <p><a href="">Popular Content</a></p>
             </div>
-            <div class="content-text-right">
+            <div className="content-text-right">
                 <p><a href="">See all</a></p>
             </div>
         </div>
-        <section id="features" >
-            <div className='features'>
+        <section id="feature" >
+            <div className='feature'>
                 <img src={feature1} />
                 <img src={feature2} />
                 <img src={feature3} />
                 </div>
-                <div className='features1'><img src={feature1} /></div>
+                <div className='feature1'><img src={feature1} /></div>
         </section>
     {/* End of features section1 */}
 
     {/* Start of features section2 */}
-        <div class="content-text">
+        <div className="content-text">
             <div class="content-text-left">
                 <p><a href="">KudiTip Featured creators</a></p>
             </div>
-            <div class="content-text-right">
+            <div className="content-text-right">
                 <p><a href="">See all</a></p>
             </div>
         </div>
-        <section id="features">
-            <div class="features-item">
+        <section id="feature">
+            <div className="feature-item">
                 <img src={feature4} />
                 <h4>Sarah Lonnie</h4>
                 <h5>4.1k followers</h5>
                 <p>Hello, Im Sarah. I'm a mid 30</p>
                 <p>A sport Analyst...</p>
                 <p>Sport Analyst</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                 </div>
             </div>
-            <div class="features-item">
+            <div className="feature-item">
                 <img src={featuree5} />
                 <h4>Kole Olawale</h4>
                 <h5>5.1k followers</h5>
                 <p>Hello, Im Kole. I'm a mid 20</p>
                 <p>A Relationship doctor...</p>
                 <p>Podcaster</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                 </div>
             </div>
-            <div class="features-item">
+            <div className="feature-item">
                 <img src={feature6} />
                     <h4>Ibrahim Balogun</h4>
                     <h5>20k followers</h5>
                     <p>Hello, I'm Wizkid. I'm a late 20</p>
                     <p>A world superstar</p>
                     <p>Music Artist</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                  </div>
                 
             </div>
-            <div className='features1'>
+            <div className='feature1'>
             <img src={feature4} />
                 <h4>Sarah Lonnie</h4>
                 <h5>4.1k followers</h5>
                 <p>Hello, Im Sarah. I'm a mid 30</p>
                 <p>A sport Analyst...</p>
                 <p>Sport Analyst</p>
-                <div class="features-link">
+                <div className="feature-link">
                     <a href="">follow</a>
                 </div> </div>
         </section>

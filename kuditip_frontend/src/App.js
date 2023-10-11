@@ -19,9 +19,11 @@ import FAQ from './page_components/FAQ';
 import Error from './page_components/Error';
 import Explore from './page_components/Explore';
 import AboutUs from './page_components/AboutUs';
+import MyAccount from './page_components/MyAccount';
 import MyPageHome from './page_components/MyPageHome';
 import Settings from './page_components/Settings';
 // import MyPageHome from './components/MyPageHeader';
+
 
 
 
@@ -48,6 +50,7 @@ function App() {
       <Route path='/settings' element={<Settings/>}/>
       <Route path='/explore' element={<Explore/>}/>
       <Route path="*" element={<Error />} />
+
 
 
       <Route path='/message' element={<Message/>}/>
