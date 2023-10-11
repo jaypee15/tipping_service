@@ -51,15 +51,15 @@ const Header = () => {
 
             <nav className={showMenu ? 'mobile_nav' : 'mobile_toggle'} >
 
-                <NavLink>Explore</NavLink>
+                <NavLink to='/explore'>Explore</NavLink>
 
-                <NavLink>About Us</NavLink>
+                <NavLink to='/aboutUs'>About Us</NavLink>
 
                 <NavLink>Blog</NavLink>
 
-                <NavLink>Log In</NavLink>
+                <NavLink to='/login'>Log In</NavLink>
 
-                <NavLink>Sign Up</NavLink>
+                <NavLink to='/signup'>Sign Up</NavLink>
 
             </nav>
             

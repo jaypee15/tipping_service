@@ -6,7 +6,6 @@ import feature3 from "../images/feature3.png"
 import feature4 from "../images/feature4.png"
 import featuree5 from "../images/featuree5.png"
 import feature6 from "../images/feature6.png"
-// import textlogo from "../images/textlogo.png"
 import landing from "../images/landing.png"
 import logo2 from "../images/logo2.png"
 import blog from "../images/blog.png"
@@ -17,6 +16,7 @@ import landingmobile from "../images/landingmobile.png"
 import Groupicon from "../images/Groupicon.png"
 import Header from '../components/Header'
 import Button from '../unit_components/Button'
+import Footer from '../components/Footer'
 
 
 const Explore = () => {
@@ -134,49 +134,8 @@ const Explore = () => {
         </section>
     {/* End of features section2*/}
 
-    {/* Start of footer */}
-        <footer id="footer-menu">
-            <div class="footer-menu">
-                <div class="footer-menu-item1">
-                    <img src={logo2} />
-                    <p>KudiTip</p>
-                </div>
-                <div class="footer-menu-item">
-                    <h4>About KudiTip</h4>
-                    <p><a href="">Who are we</a></p>
-                    <p><a href="">Terms and Conditions</a></p>
-                    <p><a href="">Privacy policy</a></p>
-                </div>
-                <div class="footer-menu-item">
-                    <h4>Use KudiTip with</h4>
-                    <p><a href="">Twitter</a></p>
-                    <p><a href="">Instagram</a></p>
-                    <p><a href="">Facebook</a></p>
-                    <p><a href="">YouTube</a></p>
-                </div>
-                <div class="footer-menu-item">
-                    <h4>Resources</h4>
-                    <p><a href="">Become a creator</a></p>
-                    <p><a href="">Membership</a></p>
-                    <p><a href="">Donations</a></p>
-                    <p><a href="">KudiTip shop and commission</a></p>
-                </div>
-                <div class="footer-menu-item">
-                    <h4>Help & Support</h4>
-                    <p><a href="">Help</a></p>
-                    <p><a href="">F.A.Q</a></p>
-                    <p><a href="">Contact us</a></p>
-                </div>
-            </div>
-            <hr />
-            <div class="bottom-footer">
-                <p><i class="fa fa-copyright"></i>2023</p>
-                <img src={logo2} />
-                <p>KudiTip</p>
-            </div>
-        
-        </footer>
-    {/* End of footer */}
+    {/* footer */}
+    <Footer />
    </div>
     
   );

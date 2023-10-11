@@ -3,8 +3,11 @@ import "./Error.css"
 import Error404 from "../images/Error404.png"
 import Button from '../unit_components/Button'
 import FooterBottom from '../components/FooterBottom'
+import { useNavigate } from "react-router-dom";
 
 const Error = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
         {/* Start of error404 message */}
@@ -14,7 +17,7 @@ const Error = () => {
             </div>
             <div className='message-text'>
                 <h5>Oops! the page you’re looking could not be found</h5>
-                <Button text="Go to Homepage" skip={true} className='home-button'/>   
+                <Button text="Go to Homepage" skip={true} className='home-button' onClick={() => {navigate('/')}}/>   
             </div>
             
         </div>

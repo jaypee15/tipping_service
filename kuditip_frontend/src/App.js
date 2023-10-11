@@ -10,8 +10,6 @@ import EarnPlan from './page_components/EarnPlan';
 import UploadProfilePic from './page_components/UploadProfilePic';
 import Interest from './page_components/Interest';
 import UnlockFeatures from './page_components/UnlockFeatures';
-// import MyPageHeader from './components/MyPageHeader';
-import Settings from './page_components/Settings';
 import Payment from './page_components/Payment';
 import Gallery from './page_components/Gallery';
 import Donation from './page_components/Donation';
@@ -22,7 +20,9 @@ import Error from './page_components/Error';
 import Explore from './page_components/Explore';
 import AboutUs from './page_components/AboutUs';
 import MyPageHome from './page_components/MyPageHome';
+import Settings from './page_components/Settings';
 // import MyPageHome from './components/MyPageHeader';
+
 
 
 
@@ -43,31 +43,21 @@ function App() {
       <Route path='/myPage' element={<MyPageHome/>}/>
       <Route path='/aboutUs' element={<AboutUs/>}/>
       <Route path='/faq' element={<FAQ/>}/>
+      <Route path='/donation' element={<Donation/>}/>
+      <Route path='/gallery' element={<Gallery/>}/>
+      <Route path='/settings' element={<Settings/>}/>
+      <Route path='/explore' element={<Explore/>}/>
       <Route path="*" element={<Error />} />
 
 
-      <Route path='/hj' element={<Message/>}/>
+      <Route path='/message' element={<Message/>}/>
 
-
-      <Route path='/ghjk' element={<Settings/>}/>
-
-      <Route path='/' element={<Donation/>}/>
-
-
-
-      {/* <Route path='/ghjk' element={<MyPageHeader/>}/> */}
-
-
-
-      <Route path='/njkl' element={<Payment/>}/>
-      <Route path='/ghjk' element={<Gallery/>}/>
-      <Route path='/n' element={<Donation/>}/>
+      <Route path='/' element={<Payment/>}/>
       <Route path='/Membership' element={<Membership/>}/>
-      {/* <Route path='/' element={<MyPageHeader/>}/> */}
-      <Route path='/ghjk' element={<Explore/>}/>
      </Routes>
     </div>
   );
 }
 
 export default App;
+      {/* <Route path='/' element={<Setting/>}/> */}

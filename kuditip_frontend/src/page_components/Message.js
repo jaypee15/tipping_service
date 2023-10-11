@@ -1,48 +1,43 @@
 import React from 'react'
 import "./Message.css"
-import search from "../images/search.png"
-import inbox_outline from "../images/inbox-outline.png"
-import majesticons_plus1 from "../images/majesticons_plus1.png"
 import MyPageHeader from '../components/MyPageHeader'
 import SideBar from '../components/SideBar'
+import SearchIcon from '../svg/SearchIcon'
+import PlusIcon from '../svg/PlusIcon'
+import MailBagIcon from '../svg/MailBagIcon'
+import Button from '../unit_components/Button'
 
 const Message = () => {
   return (
     <div>
         <MyPageHeader />
         {/* Start of page heading */}
-        <div className='page_content'>
+        <div className='message_content'>
             <SideBar />
-            <div>
-                <div className='heading'>
-                    <h5>Messages</h5>
+            <div className='message_body'>
+                <div className='Message_heading'>
+                    <h3>Messages</h3>
                 </div>
-                <div className='heading-item3'>
+                <div className='Message_heading3'>
                     <p>All</p>
                     <div className='heading-icon'>
-                        <img src={majesticons_plus1} />
-                        <img src={search} />
+                        <PlusIcon color='#000' />
+                        <SearchIcon />
                     </div>
                 </div>
                 {/* End of page heading */}
 
                 {/* Start of content */}
-                <div className='contain'>
-                    <img src={inbox_outline} />
+                <div className='message_contain'>
+                    <MailBagIcon />
                     <h4>No messages yet</h4>
                     <p>Either send a private message or distribute a message to all of your supporters or members.</p>
 
-                    <div className='bottom-btn1'>
-                        <img src={majesticons_plus1} />
-                        <p>New message</p>
-                    </div>
+                    <Button text='New message' icon={<PlusIcon color='#000' height='20' width='20' strokeWidth='1.2' />} className='bottom-btn1' />
                 </div>
             </div>
         </div>
         {/* End of content */}
-
-       
-      
     </div>
   )
 }

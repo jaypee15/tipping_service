@@ -1,78 +1,44 @@
-.body{
-    /* margin-right: 3%; */
-    margin: 0;
+.Body_container {
+    display: flex;
+}
+
+.container{
+    margin: auto;
     width: 625px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30%;
 }
-.body h5{
-    text-align: left;
-}
-.features{
+
+.support {
     display: flex;
-    gap: 20px;
-    width: 70%;
-    /* align-items: center; */
-    /* gap: 40px; */
-    /* padding-left: 10px;
-    padding-top: 10px;
-    width: 70%;
-    /* background-color: #D9D9D9; */
+    gap: 8%;
 }
-.features-item{
-    background-color: #D9D9D9;
-    width: 300px;
-    gap: 20px;
-    padding-left: 10px;
+
+.supporters_item {
+    background-color: #D9D9D999;
+    width: 46%;
+    padding-left: 15px;
 }
-.sub-features{
+
+.supporters_numbers {
     display: flex;
-    gap: 5px;
     align-items: center;
+    gap: 10px;
 }
-.sub-features img{
-    width: 20px;
-    height: 20px;
-}
-.sub-features p{
-    font-weight: 500;
-}
-.features-icon{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-.features-icon img{
-    width: 20px;
-    height: 20px;
-}
-.content{
-    width: 70%;
+
+.contentss {
     margin-top: 20px;
     border: 2px solid #808080;
     border-radius: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
-.content-item{
-    width: 120px;
-    margin-bottom: 10px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    background-color: #D9D9D999;
-    border-radius: 10px;
+
+.donation_button {
+    background-color: #808080 !important;
+    color: black !important;
+    font-weight: 300 !important;
+    font-size: large !important;
 }
-.content-item img{
-    padding-left: 5px;
-    width: 20px;
-    height: 20px;
-}
-.content-item a{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
+
 
 @media only screen and (max-width: 750px) {
     .body{
