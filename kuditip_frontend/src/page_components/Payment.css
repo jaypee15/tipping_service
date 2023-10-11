@@ -2,33 +2,44 @@
     display: flex;
     gap: 20px;
 }
+
 .payment-body{
     width: 75%;
 }
+
 .payment-body p{
     font-size: 15px;
     padding-left: 15px;
 }
+
 .payment-body h1{
     padding-left: 15px;
     font-weight: 500;
     font-size: 30px;
 }
+
 .payment-body h2{
     padding-left: 15px;
     font-weight: 500;
     font-size: 25px;
     margin: 0;
 }
+
 .payment-body h5{
     font-weight: 500;
 }
+
 .payment-method{
     display: flex;
 }
+
 .edit{
     margin-left: auto;
+    background-color: #ffffff !important;
+    color: #1BAEDF !important;
+    border: solid 2px #1BAEDF !important;
 }
+
 .payment-method{
     border: #1BAEDF;
     border-radius: 5px;
@@ -58,16 +69,14 @@
 .sub-container-item1{
     flex-direction: column;
 }
-/* .sub-container img{
-    width: 20px;
-    height: 20px;
-    padding: 5px 20px;
-} */
+
 .btn{
-    border: 1px solid#1BAEDF;
+    border: 1px solid#1BAEDF !important;
     border-radius: 5px;
     padding: 0px 3px;
     margin-left: auto;
+    background-color: #ffffff !important;
+    color: #1BAEDF !important;
 }
 .btn1{
     border: 1px solid#1BAEDF;

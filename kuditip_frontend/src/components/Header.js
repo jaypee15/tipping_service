@@ -1,4 +1,3 @@
-// import logo from '../images/frame_11.png';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
@@ -21,10 +20,6 @@ const Header = () => {
 
             <Logo />
 
-            {/* <Link>
-                <img src={logo} alt="kuditip_logo" />
-            </Link> */}
-
             <nav className='menu' onClick={toggleMenu}>
 
                 <GiHamburgerMenu />
@@ -33,7 +28,7 @@ const Header = () => {
 
             <nav className='nav_section'>
 
-                <NavLink>Explore</NavLink>
+                <NavLink to='/explore'>Explore</NavLink>
 
                 <NavLink to='/aboutUs'>About Us</NavLink>
 
@@ -51,15 +46,15 @@ const Header = () => {
 
             <nav className={showMenu ? 'mobile_nav' : 'mobile_toggle'} >
 
-                <NavLink>Explore</NavLink>
+                <NavLink to='/explore'>Explore</NavLink>
 
-                <NavLink>About Us</NavLink>
+                <NavLink to='/aboutUs'>About Us</NavLink>
 
                 <NavLink>Blog</NavLink>
 
-                <NavLink>Log In</NavLink>
+                <NavLink to='/login'>Log In</NavLink>
 
-                <NavLink>Sign Up</NavLink>
+                <NavLink to='/signup'>Sign Up</NavLink>
 
             </nav>
             

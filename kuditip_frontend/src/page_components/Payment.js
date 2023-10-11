@@ -22,7 +22,7 @@ const Payment = () => {
                 
                 <div className='payment-method'>
                     <p>Payment method</p>
-                    <div className='edit'><a href='' >Edit</a></div>
+                    <Button text='Edit' className={'edit'}/>
                 </div>
                 <p>Set default payment option</p>
                 <div className='sub-container'>
@@ -32,9 +32,7 @@ const Payment = () => {
                         <p>Connect your bank account</p>
                     </div>
                     <Button text='connect' className={"btn"} />
-                    {/* <div className='btn'>
-                        <a href=''><p>Connect</p></a>
-                    </div> */}
+                 
                 </div>
                 <div className='sub-container'>
                     <Cryptoicon />
@@ -43,9 +41,7 @@ const Payment = () => {
                         <p>Connect your wallet address</p>
                     </div>
                     <Button text='Connected' className={"btn1"} />
-                    {/* <div className='btn1'>
-                        <a href=''><p>Connected</p></a>
-                    </div> */}
+                 
                 </div>
                 <div className='payment-story'>
                     <h2>Payment history</h2>

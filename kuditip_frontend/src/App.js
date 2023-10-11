@@ -10,8 +10,6 @@ import EarnPlan from './page_components/EarnPlan';
 import UploadProfilePic from './page_components/UploadProfilePic';
 import Interest from './page_components/Interest';
 import UnlockFeatures from './page_components/UnlockFeatures';
-import MyPageHeader from './components/MyPageHeader';
-import Settings from './page_components/Settings';
 import Payment from './page_components/Payment';
 import Gallery from './page_components/Gallery';
 import Donation from './page_components/Donation';
@@ -23,8 +21,7 @@ import Explore from './page_components/Explore';
 import AboutUs from './page_components/AboutUs';
 import MyAccount from './page_components/MyAccount';
 import MyPageHome from './page_components/MyPageHome';
-// import MyPageHome from './components/MyPageHeader';
-
+import Settings from './page_components/Settings';
 
 
 
@@ -32,7 +29,7 @@ function App() {
   return (
    <div className="App">
      <Routes>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/signup' element={<SignUp />} />
       <Route path='/login' element={<Login/>}/>
       <Route path='/aboutMember' element={<AboutMember/>}/>
@@ -45,37 +42,15 @@ function App() {
       <Route path='/myPage' element={<MyPageHome/>}/>
       <Route path='/aboutUs' element={<AboutUs/>}/>
       <Route path='/faq' element={<FAQ/>}/>
-      <Route path="*" element={<Error />} />
-
-      <Route path='/membership' element={<Membership/>}/>
-      <Route path='/payment' element={<Payment/>}/>
-
-
-      <Route path='/hj' element={<Message/>}/>
-
-
-      <Route path='/ghjk' element={<Settings/>}/>
-
       <Route path='/donation' element={<Donation/>}/>
-
-
-
-      {/* <Route path='/ghjk' element={<MyPageHeader/>}/> */}
-
-
-
-      <Route path='/payment' element={<Payment/>}/>
-      <Route path='/ghjk' element={<Gallery/>}/>
-      <Route path='/donation' element={<Donation/>}/>
-      <Route path='/sdvfbg' element={<Membership/>}/>
-      <Route path='/faq' element={<FAQ/>}/>
-      <Route path='/ghhh' element={<Error/>}/>
-      <Route path='/myPage' element={<MyPageHeader/>}/>
+      <Route path='/gallery' element={<Gallery/>}/>
+      <Route path='/settings' element={<Settings/>}/>
       <Route path='/explore' element={<Explore/>}/>
-      <Route path='/AboutUs' element={<AboutUs/>}/>
-      <Route path='/myaccount' element={<MyAccount/>}/>
-      {/* <Route path='/' element={<MyPageHeader/>}/> */}
-      <Route path='/ghjk' element={<Explore/>}/>
+      <Route path='/Payment' element={<Payment/>}/>
+      <Route path='/message' element={<Message/>}/>
+      <Route path='/myAccount' element={<MyAccount/>}/>
+      <Route path='/membership' element={<Membership/>}/>
+      <Route path="*" element={<Error />} />
      </Routes>
     </div>
   );

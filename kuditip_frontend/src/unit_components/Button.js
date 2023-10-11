@@ -11,12 +11,12 @@ const regularButton = {
   backgroundColor: 'rgb(25, 170, 227)',
   width: '100%',
 }
-const Button = ({text, earnPlanStyle, skip, regular, type, onClick, className = null}) => {
+const Button = ({text, earnPlanStyle, skip, regular, type, icon, onClick, className = null}) => {
 
 
   const btnDisplayStyle = skip ? skipButton ? regular : regularButton : '';
 
-  const defaultStyle = {fontWeight: 'bold', color: '#fff', fontSize: '1em', cursor: 'pointer', borderRadius: '10px', padding: '10px', border: 'none', backgroundColor: 'rgb(25, 170, 227)'};
+  const defaultStyle = {display: 'flex', alignItems: 'center', gap: '5px', fontWeight: 'bold', color: '#fff', fontSize: '1em', cursor: 'pointer', borderRadius: '10px', padding: '10px', border: 'none', backgroundColor: 'rgb(25, 170, 227)'};
   
   return (
     <button 
@@ -25,7 +25,7 @@ const Button = ({text, earnPlanStyle, skip, regular, type, onClick, className = 
       type={type ?? "submit"}
       onClick={onClick}
     >
-      {text}
+      {icon} {text}
     </button>
   )
 }

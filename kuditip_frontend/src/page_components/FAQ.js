@@ -1,8 +1,8 @@
 import React from 'react'
 import "./FAQ.css"
-import search from "../images/search.png"
 import Header from '../components/Header'
 import Button from '../unit_components/Button'
+import SearchIcon from '../svg/SearchIcon'
 
 const FAQ = () => {
   return (
@@ -16,7 +16,7 @@ const FAQ = () => {
           <p>If you can’t find an answer that you’re looking for, feel free to chat our friendly team. We’re here to help.</p>
         </div>
         <div className='heading-item5'>
-          <img src={search} />
+          <SearchIcon />
           <p>search</p>
         </div>
         {/* <div className='bottom-btn4'>

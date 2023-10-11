@@ -94,6 +94,7 @@ body{
    height: 40px;
    margin: 0 auto;
    align-items: center;
+   padding: 5px;
 }
 .search input{
     width: 100%;
@@ -138,6 +139,9 @@ body{
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #1BAEDF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .content-item1{
     display: none;

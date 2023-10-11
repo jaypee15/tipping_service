@@ -1,54 +1,46 @@
 import React from 'react'
 import "./Donation.css"
-import loveicon from "../images/loveicon.png"
-import nairaicon from "../images/nairaicon.png"
-import solar_bag from "../images/solar_bag.png"
-import linkicon from "../images/linkicon.png"
 import MyPageHeader from '../components/MyPageHeader'
+import Button from '../unit_components/Button'
+import LoveIcon from '../svg/LoveIcon'
+import SideBar from '../components/SideBar'
+import LinkIcon from '../svg/LinkIcon'
 
 const Donation = () => {
   return (
     <div> 
         <MyPageHeader showAllNav={false}/>
-        {/* Start of body */}
-        <div className='body'>  
-                {/* Start of content1 */}
-                <h5>My Supporters</h5>
-                <div className='features'>
-                    <div className='features-item'>
+        <div className='Body_container'>
+            <SideBar />
+            <div className='container'>
+                <h3>My Supporters</h3>
+                <div className='support'>
+                    <div className='supporters_item'>
                         <p>0</p>
-                        <div className='sub-features'>
-                            <img src={loveicon} />
+                        <div className='supporters_numbers'>
+                            <LoveIcon />
                             <p>Supporters</p>
                         </div>
+                    
                     </div>
-            
-                    <div className='features-item'>
-                        <div className='features-icon'>
-                            <img src={nairaicon} />
-                            <p>0</p>
-                        </div>
-                        <div className='sub-features'>
-                            <img src={solar_bag} />
+
+                    <div className='supporters_item'>
+                        <p>0</p>
+                        <div className='supporters_numbers'>
+                            <LoveIcon />
                             <p>Last 30 days</p>
                         </div>
+                    
                     </div>
                 </div>
-                {/*End of content1 */}
-
-            {/* Start of content2 */}
-            <div className='content2'>
-                <h5>You don’t have supporters yet</h5>
-                <p>Share your page to earn more.</p>
-                <div className='content-item2'>
-                    <img src={linkicon} />
-                    <a href=''><p>Copy link</p></a>
+                <div className='contentss'>
+                    <h5>You don’t have supporters yet</h5>
+                    <p>Share your page to earn more.</p>
+                    <Button text="Copy link" className="donation_button" icon={<LinkIcon />} />
                 </div>
-
             </div>
-            {/* End of content2 */}
         </div>
-        {/* End of body */}
+      
     </div>
   )
 }

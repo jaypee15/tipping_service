@@ -1,11 +1,22 @@
-h5{
-    font-weight: 700;
+/* Start of page heading */
+.gallery_body {
+    display: flex;
 }
 
-/* Start of page heading */
+.gallery_content {
+    padding: 0 20px;
+}
+
 .heading{
     margin-top: 20px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_rightside {
+    display: flex;
+    gap: 10px;
     align-items: center;
 }
 .heading-item{
@@ -31,11 +42,7 @@ h5{
 .heading-item p{
     font-size: 10px;
 }
-.heading-item3{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+
 .heading-item3 img{
     width: 20px;
     height: 20px;
@@ -50,30 +57,12 @@ h5{
 /* End of page heading */
 
 /* Start of content  */
-.contain{
-    left:0;
-    right:0;
-  
-    margin-left: auto;
-    margin-right: auto;
-  
-    position: absolute;
-    width: 50%;
-    flex-direction: column;
-    padding-top: 50px;
-    align-items: center;
-    padding-right: 15%;
-    padding-left: 15%;
+.gallery_contain{
     text-align: center;
-
-}
-.contain img{
-    margin: 0;
-    width: 30px;
-}
-.contain p{
-    text-align: center;
-    font-size: 22px;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
 }
 /* End of content */
 

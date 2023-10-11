@@ -1,14 +1,19 @@
 /* Start of fisrt container */
 .container1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; /* Add this line to vertically center items */
-    gap: 2px; /* Add some space between the text and the image */
 }
 
 .firstchild {
-    width: 50%;
+    padding: 0 15%;
+    width: 35%;
     text-align: center; /* Center-align the text */
+    /* font-weight: bolder; */
+}
+
+.firstchild p {
+    font-weight: bold;
 }
 
 .firstchildbtn {
@@ -16,29 +21,15 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: auto;
+    background-color: #266D9E !important;
 }
 
-.firstchildbtn a {
-    background-color: darkred;
-    text-decoration: none;
-    width: 100px;
-    color: white;
-    padding: 7px;
-    border-radius: 7px;
-    cursor: pointer;
-     /* Adding some padding for better visual appearance */
-}
-
-.secondchild {
+/* .secondchild {
     width: 50%;
-}
+} */
 .secondchild img {
-    max-width: 50%; /* Adjust the image's width */
-    display: block; 
-    /* Remove the float and make it a block element */
-    margin: 0 auto; 
-    margin-top: 3rem;
-    /* Center the image horizontally */
+    max-width: 60%;
 }
 /* End of fisrt container */ 
 
@@ -54,8 +45,9 @@
  .inputsearch{
     display: flex;
     border-radius: 3px;
-    border: solid rgb(236, 203, 206);
-    box-shadow:  1px 2px 2px rgb(183, 175, 177);
+    border: solid #266D9E;
+    box-shadow:  1px 2px 2px #266D9E;
+    padding: 3px;
     gap: 5px;
     width: 30%;
     height: 40px;
@@ -71,18 +63,6 @@
      margin-left: 10px;
  }
 
- .inputsearch p{
-    text-align: center;
-    color: white;
-    width: 100px;
-    height: 25px;
-    background-color: darkred;
-    border-radius: 5px;
-    padding: 3px;
-    margin-right: 10px;
-    position: relative;  
-    cursor: pointer;  
- }
  /* End of search input  */
 
  /* Start of what's kuditip  */
@@ -91,7 +71,7 @@
  }
  .whatskuditip h5{
      margin-top: 2rem;
-     color: rgb(179, 18, 71);
+     color: #266D9E;
      font-size: 15px;
  }
  .whatskuditip span{
@@ -108,8 +88,13 @@
    
  }
 
- .whatskuditip-logo h5{
+ .whatskuditip_purpose {
+    width: 30%;
+ }
+
+ .whatskuditip-logo p{
     color: rgb(46, 45, 45);
+    font-weight: 600;
  }
 
  .thirdimg img{
@@ -123,20 +108,10 @@
 
 .discover-more {
     margin: 0 auto;
-    width: 150px; /* Border color matches the background color */
-    height: 50px;
-}
-
-.discover-more a {
-    display: flex;
-    border: 1px solid  rgb(141, 10, 53);
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: rgb(134, 1, 45);
-    border-radius: 5px;
-    text-decoration: none;
+    background-color: #fff !important;
+    border: 1px solid #266D9E !important;
+    padding: 10 25px !important;
+    color: #266D9E !important
 }
 
 
@@ -155,12 +130,13 @@
    
 
   .logo1, .logo2, .logo3 {
-    border: 1px solid rgb(134, 1, 45);
+    border: 1px solid #266D9E;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 15%;
     padding: 13px; /* Adjust the value as needed */
   }
    /* End of why choose kudi */
@@ -173,17 +149,13 @@
     margin-top: 4rem;
 } 
 
-.createkudiPage-btn a{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid rgb(134, 1, 45);
-    width: 170px;
-    padding: 5px;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(134, 1, 45);
-    margin: 0 auto;
+.createkudiPage-btn {
+    border: 1px solid #266D9E !important;
+    color: #266D9E !important;
+    margin: auto;
     border-radius: 7px;
+    background-color: #fff !important;
+    width: fit-content !important;
 } 
 .createkudiPage{
     width: 100%;
@@ -198,29 +170,22 @@
     margin-top: 3rem;
 }
 
+.items button {
+    margin: auto;
+}
+
 .createkudiPage-items img{
     width: 65%;
 }
 .createkudiPage-items h4{
-    color: rgb(134, 1, 45);;
+    color: #266D9E;
     font-size: 17px;
 }
 
 .createkudiPage-items h5{
     font-size: 16px;
 }
-.createkudiPage-items a{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid rgb(134, 1, 45);
-    width: 180px;
-    padding: 5px;
-    font-size: 14px;
-    text-decoration: none;
-    color: rgb(134, 1, 45);
-    margin: 0 auto;
-    border-radius: 7px;
-}
+
 /* end of create kudi page */
 
 /* @MEDIA QUERY START*/

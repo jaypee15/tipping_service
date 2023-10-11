@@ -4,6 +4,7 @@ import Logo from '../unit_components/Logo';
 import UpLoadIcon from '../svg/UpLoadIcon';
 import PlusIcon from '../svg/PlusIcon';
 import ProfilePic from './ProfilePic';
+import { NavLink } from 'react-router-dom';
 
 
 const MyPageHeader = ({showAllNav}) => {
@@ -35,6 +36,8 @@ const MyPageHeader = ({showAllNav}) => {
                <p>MyPage</p>
                <ProfilePic />
             </div>
+            <NavLink to='/explore' className='member_image'>Explore</NavLink>
+
 
          </div>
       </div>
