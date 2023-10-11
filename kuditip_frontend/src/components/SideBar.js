@@ -24,7 +24,7 @@ const SideBar = () => {
         </div>
         <div className='sideBarNav'>
             <MemberCardIcon />
-            <NavLink>Membership</NavLink>
+            <NavLink to='/membership'>Membership</NavLink>
         </div>
         <div className='sideBarNav'>
             <DonationNavIcon  />
@@ -44,7 +44,7 @@ const SideBar = () => {
         </div>
         <div className='sideBarNav'>
             <MoneyBagIcon  />
-            <NavLink>Payout</NavLink>
+            <NavLink to='/payment'>Payout</NavLink>
         </div>
         <div className='sideBarNav'>
             <SettingIcon  />

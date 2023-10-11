@@ -15,9 +15,7 @@ const Message = () => {
         <div className='message_content'>
             <SideBar />
             <div className='message_body'>
-                <div className='Message_heading'>
-                    <h3>Messages</h3>
-                </div>
+                <h3>Messages</h3>
                 <div className='Message_heading3'>
                     <p>All</p>
                     <div className='heading-icon'>

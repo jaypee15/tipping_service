@@ -1,17 +1,11 @@
 /* Start of page heading */
 .message_content {
     display: flex;
-    background-color: red;
 }
 
 .message_body {
-background-color: aqua;
-}
-
-.Message_heading{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .Message_heading3{
@@ -22,10 +16,9 @@ background-color: aqua;
 
 .message_contain {
     margin: auto;
-    width: 70%;
+    width: 55%;
     text-align: center;
     justify-content: center;
-    background-color: brown;
 }
 
 .heading-icon{

@@ -22,9 +22,6 @@ import AboutUs from './page_components/AboutUs';
 import MyAccount from './page_components/MyAccount';
 import MyPageHome from './page_components/MyPageHome';
 import Settings from './page_components/Settings';
-// import MyPageHome from './components/MyPageHeader';
-
-
 
 
 
@@ -32,7 +29,7 @@ function App() {
   return (
    <div className="App">
      <Routes>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/signup' element={<SignUp />} />
       <Route path='/login' element={<Login/>}/>
       <Route path='/aboutMember' element={<AboutMember/>}/>
@@ -49,18 +46,14 @@ function App() {
       <Route path='/gallery' element={<Gallery/>}/>
       <Route path='/settings' element={<Settings/>}/>
       <Route path='/explore' element={<Explore/>}/>
-      <Route path="*" element={<Error />} />
-
-
-
+      <Route path='/Payment' element={<Payment/>}/>
       <Route path='/message' element={<Message/>}/>
-
-      <Route path='/' element={<Payment/>}/>
-      <Route path='/Membership' element={<Membership/>}/>
+      <Route path='/myAccount' element={<MyAccount/>}/>
+      <Route path='/membership' element={<Membership/>}/>
+      <Route path="*" element={<Error />} />
      </Routes>
     </div>
   );
 }
 
 export default App;
-      {/* <Route path='/' element={<Setting/>}/> */}
