@@ -1,7 +1,7 @@
 import React from 'react'
 import "./MyAccount.css"
 import Frame228 from "../images/Frame228.png"
-import lilian_image from "../images/lilian_image.png"
+// import lilian_image from "../images/lilian_image.png"
 import Post from "../svg/Post";
 import MembershipIcon from '../svg/MembershipIcon';
 import CommissionIcon from '../svg/CommissionIcon';
@@ -15,7 +15,7 @@ const MyAccount = () => {
         <div className='earning-top'>
             <div className='earning-profile'>
                 <div className='earning-user'>
-                    <img src={lilian_image} />
+                    {/* <img src={lilian_image} /> */}
                     <div className='earning-user-item'>
                         <p>Hi, Lilian</p>
                         <p>kudiTip.com/Lilian</p>

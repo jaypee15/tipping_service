@@ -10,7 +10,7 @@ import EarnPlan from './page_components/EarnPlan';
 import UploadProfilePic from './page_components/UploadProfilePic';
 import Interest from './page_components/Interest';
 import UnlockFeatures from './page_components/UnlockFeatures';
-// import MyPageHeader from './components/MyPageHeader';
+import MyPageHeader from './components/MyPageHeader';
 import Settings from './page_components/Settings';
 import Payment from './page_components/Payment';
 import Gallery from './page_components/Gallery';
@@ -47,13 +47,16 @@ function App() {
       <Route path='/faq' element={<FAQ/>}/>
       <Route path="*" element={<Error />} />
 
+      <Route path='/membership' element={<Membership/>}/>
+      <Route path='/payment' element={<Payment/>}/>
+
 
       <Route path='/hj' element={<Message/>}/>
 
 
       <Route path='/ghjk' element={<Settings/>}/>
 
-      <Route path='/' element={<Donation/>}/>
+      <Route path='/donation' element={<Donation/>}/>
 
 
 
@@ -61,16 +64,16 @@ function App() {
 
 
 
-      <Route path='/njkl' element={<Payment/>}/>
+      <Route path='/payment' element={<Payment/>}/>
       <Route path='/ghjk' element={<Gallery/>}/>
-      <Route path='/n' element={<Donation/>}/>
-      <Route path='/Membership' element={<Membership/>}/>
-      <Route path='/FAQ' element={<FAQ/>}/>
+      <Route path='/donation' element={<Donation/>}/>
+      <Route path='/sdvfbg' element={<Membership/>}/>
+      <Route path='/faq' element={<FAQ/>}/>
       <Route path='/ghhh' element={<Error/>}/>
       <Route path='/myPage' element={<MyPageHeader/>}/>
       <Route path='/explore' element={<Explore/>}/>
       <Route path='/AboutUs' element={<AboutUs/>}/>
-      <Route path='/' element={<MyAccount/>}/>
+      <Route path='/myaccount' element={<MyAccount/>}/>
       {/* <Route path='/' element={<MyPageHeader/>}/> */}
       <Route path='/ghjk' element={<Explore/>}/>
      </Routes>
