@@ -1,6 +1,7 @@
 /* Start of fisrt container */
 .container1 {
     display: flex;
+    margin-top: 60px;
     justify-content: space-around;
     align-items: center; /* Add this line to vertically center items */
 }

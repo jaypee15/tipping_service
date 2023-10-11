@@ -2,7 +2,7 @@ import React from 'react'
 import rafiki1 from '../images/rafiki1.png'
 import rafiki2 from '../images/rafiki2.png'
 import rafiki3 from '../images/rafiki3.png'
-import tree from '../images/Tree.png'
+import tree from '../images/tree.png'
 import "./Home.css"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
