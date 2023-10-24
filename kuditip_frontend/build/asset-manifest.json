@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1d808acd.css",
+    "main.js": "/static/js/main.62be8b3f.js",
+    "static/js/787.06df46ce.chunk.js": "/static/js/787.06df46ce.chunk.js",
+    "static/media/landing.png": "/static/media/landing.8914c6db292fe6cd5ad9.png",
+    "static/media/featuree5.png": "/static/media/featuree5.69c784043ac007d7104c.png",
+    "static/media/landingmobile.png": "/static/media/landingmobile.3a5a8990367ee94e5991.png",
+    "static/media/feature3.png": "/static/media/feature3.1f2b3dd8743f6935ff8c.png",
+    "static/media/feature4.png": "/static/media/feature4.36daaf1339d22d0f3ffd.png",
+    "static/media/feature2.png": "/static/media/feature2.d05e3d50100c271260dc.png",
+    "static/media/feature6.png": "/static/media/feature6.ebb26af3a0d069f3ce0c.png",
+    "static/media/feature1.png": "/static/media/feature1.fbd6332d18dbedf49afe.png",
+    "static/media/social_group.png": "/static/media/social_group.d77f89fb9fb52694cc75.png",
+    "static/media/tree.png": "/static/media/tree.19b88d0a186e1aa361a3.png",
+    "static/media/Whouseskudi.png": "/static/media/Whouseskudi.2276c49247cbbd24b0bb.png",
+    "static/media/Error404.png": "/static/media/Error404.877e7c09459a5d1fa03b.png",
+    "static/media/rafiki.png": "/static/media/rafiki.a21c029a7b720c6bdd22.png",
+    "static/media/rafiki3.png": "/static/media/rafiki3.ae287bf491cd55c65dea.png",
+    "static/media/rafiki2.png": "/static/media/rafiki2.015a51b6bb38c875967e.png",
+    "static/media/memberImage.png": "/static/media/memberImage.d04d2a94a755ee032fee.png",
+    "static/media/rafiki1.png": "/static/media/rafiki1.8fcfd0d98116dc931153.png",
+    "index.html": "/index.html",
+    "main.1d808acd.css.map": "/static/css/main.1d808acd.css.map",
+    "main.62be8b3f.js.map": "/static/js/main.62be8b3f.js.map",
+    "787.06df46ce.chunk.js.map": "/static/js/787.06df46ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d808acd.css",
+    "static/js/main.62be8b3f.js"
+  ]
+}
