@@ -170,7 +170,6 @@ REST_FRAMEWORK = {
 'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
@@ -211,3 +210,5 @@ SOCIALACCOUNT_PROVIDERS = {
         "VERIFIED_EMAIL": True,
     },
 }
+
+COINBASE_COMMERCE_API_KEY = "e9b09129-4cc4-4fb1-bbbc-1b360dc5bd03"
