@@ -1,9 +1,15 @@
-from rest_framework import generics
+from rest_framework import generics, views
 from rest_framework.permissions import IsAdminUser
 
 from .models import Transaction
-from .serializers import TransactionSerializer
+from .serializers import TransactionSerializer, CryptoSerializer
 from .permissions import IsOwnerOnly
+
+from coinbase_commerce.client import Client
+from django.shortcuts import render
+
+from core import settings
+
 
 
 
@@ -35,3 +41,30 @@ class DetailTransactionAPIView(generics.RetrieveAPIView):
 
     
     
+
+class CryptoView(views.APIVIEW):
+
+    def post(self, request):
+        serializer = CryptoSerializer(data=request.data)
+        if serializer.is_valid():
+            # Extract validated data
+            data = serializer.validated_data
+            
+            client = Client(api_key=settings.COINBASE_COMMERCE_API_KEY)
+            domain_url = 'http://localhost:8000/'
+            product = {
+                'name': 'Coffee',
+                'description': 'A really good local coffee.',
+                'local_price': {
+                    'amount': '5.00',
+                    'currency': 'USD'
+                },
+                'pricing_type': 'fixed_price',
+                'redirect_url': domain_url + 'success/',
+                'cancel_url': domain_url + 'cancel/',
+            }
+            charge = client.charge.create(**product)
+
+            return render(request, 'home.html', {
+                'charge': charge,
+            })
