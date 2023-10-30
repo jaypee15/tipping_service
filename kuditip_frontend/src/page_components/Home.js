@@ -41,7 +41,7 @@ function Home() {
                 </div>
               <div className='inputsearch'>
                 <input type="text" placeholder='kudutip/yourname'/>
-                <Button text='Search' className={'inputsearch_btn'}/>
+                <Button text='Claim' className={'inputsearch_btn'}/>
                 {/* <p>Search</p> */}
               </div>
          </div>
@@ -58,26 +58,26 @@ function Home() {
              </div>
            
            <div className='whatskuditip-logo'>
-           <div className='whatskuditip_purpose'>
-              <img src={rafiki1} alt="logo" />
-              <p>
-                KudiTip offer a variety of tipping options,
-                such as one-time tips, recurring tips,
-                and monthly subscriptions.
-              </p>
-           </div>
-            
-            <div className='whatskuditip_purpose thirdimg'>
-
-              <img src={rafiki2} alt="logo" />
-              <p> KudiTip is a platform for all content creators</p>
-            </div>
-            
             <div className='whatskuditip_purpose'>
-              <img src={rafiki3} alt="logo" />
-              <p>KudiTip is a platform that helps creators Directly reach out to followers</p>
+                <img src={rafiki1} alt="logo" />
+                <p>
+                  KudiTip offer a variety of tipping options,
+                  such as one-time tips, recurring tips,
+                  and monthly subscriptions.
+                </p>
             </div>
-        </div>
+              
+              <div className='whatskuditip_purpose thirdimg'>
+
+                <img src={rafiki2} alt="logo" />
+                <p> KudiTip is a platform for all content creators</p>
+              </div>
+              
+              <div className='whatskuditip_purpose'>
+                <img src={rafiki3} alt="logo" />
+                <p>KudiTip is a platform that helps creators Directly reach out to followers</p>
+              </div>
+          </div>
         
            {/* Discover more button */}
           <Button text="Discover More" className={'discover-more'} />
@@ -96,16 +96,16 @@ function Home() {
             <Decoration />
             <h5> Personalised rewards</h5>
             <h5>Get to see your rewards  and  claim them</h5>
-            </div>
+          </div>
 
         <div className='logo2'>
           <Speaker />
-        <h5>News and Messages</h5>
-        <h5> 
+         <h5>News and Messages</h5>
+         <h5> 
           Interact with your tippers, 
           send messages, post news 
           and exclusive content
-        </h5>
+          </h5>
         </div>
         
         <div className='logo3'>
