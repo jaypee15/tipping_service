@@ -26,14 +26,14 @@ const AboutUs = () => {
         {/* End of AboutUs page top content */}
 
         {/* Start of create your section */}
-        <section className='create-page'>
+    <section className='create-page'>
             <h4>Claim your page</h4>
             <p>
                 Creating your page and initiating the flow of donations and
                 support can be accomplished within a minute or takes only a minute!
             </p>
             <Button text='start your page' className={"create-page-btn"}/>
-        </section>
+     </section>
         {/* End of create your section */}
 
         {/* Start of section2 */}

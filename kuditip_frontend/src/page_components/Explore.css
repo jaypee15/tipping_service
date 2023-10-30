@@ -41,12 +41,48 @@ body{
     color: rgb(253, 253, 253);
     background: #1BAEDF
 }
+.btn:hover{
+    background-color: #075C8D !important;
+    color: #FFF !important;
+}
 .btn a{
     color: white;
 }
 .btn:hover{
     color: red;
 }
+
+.btn:hover {
+    animation: shake 0.3s, colorChange 0.2s;
+  }
+  
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 10%, 10%, 10%, 10% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      transform: scaleX(4ms);
+    }
+    20% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(4ms);
+    }
+  }
 /* End of navigation */
 
 /* Start of landing */
@@ -165,10 +201,12 @@ body{
     color: #1BAEDF;
     font-weight: 600;
 }
+
 .content-text-right{
     margin-left: auto;
     padding-right: 20px;
 }
+
 .feature{
     display: flex;
     gap: 20px;
@@ -176,13 +214,16 @@ body{
     align-content: center;
     padding-bottom: 20px;
 }
+
 #feature img{
     max-width: 100%;
     border-radius: 20px;
 }
+
 .feature1{ 
     display: none; /*features section1 media query*/
 }
+
 #feature{
     max-width: 100%;
     display: flex;
@@ -194,6 +235,7 @@ body{
     padding-bottom: 20px;
     border-radius: 20px;
 }
+
 .feature-item p{
     text-decoration: none;
     color: rgb(0, 4, 8);
@@ -201,6 +243,7 @@ body{
     font-size: 15px;
     padding-bottom: 5px;
 }
+
 .feature-item h5{
     text-decoration: none;
     color: rgb(177, 178, 180);
@@ -218,6 +261,45 @@ body{
     padding: 3px 5px 3px 5px;
     text-decoration: none;
 }
+
+.feature-link a:hover {
+    background-color: hsl(195, 78%, 49%);
+    color: white;
+  }
+
+.feature-link:hover {
+    animation: shake 0.2s, colorChange 0.2s;
+  }
+  
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 10%, 10%, 10%, 10% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      transform: scaleX(4ms);
+    }
+    20% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(4ms);
+    }
+  }
+  
+
 .feature-link {
     margin-left: auto;
 }
@@ -348,17 +430,21 @@ hr{
     .content-text{
         align-items: center
     }
+    
     .content-item1 {
         width: 100%;
     }
+
     .content-item1 img{
         width: 15px;
         margin-left: auto;
     }
+
     .features{
         flex-direction: column;
         width: 100%;
     }
+
     #features{
         flex-direction: column;
     }

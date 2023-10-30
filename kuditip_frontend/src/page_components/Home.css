@@ -25,6 +25,43 @@
     margin: auto;
     background-color: #266D9E !important;
 }
+.firstchildbtn:hover{
+    background-color: white !important; 
+    color: #266D9E !important;
+}
+
+
+.firstchildbtn:hover {
+    animation: shake 0.3s, colorChange 0.2s;
+  }
+  
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 10%, 10%, 10%, 10% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      transform: scaleX(4ms);
+    }
+    20% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(4ms);
+    }
+  }
 
 /* .secondchild {
     width: 50%;
@@ -63,6 +100,12 @@
      outline: none;
      margin-left: 10px;
  }
+ .inputsearch_btn:hover{
+    background-color: white !important;
+    color: #266D9E !important;
+    animation: shake 0.2s, colorChange 0.2s;
+ }
+
 
  /* End of search input  */
 
@@ -78,15 +121,14 @@
  .whatskuditip span{
     color: rgb(48, 47, 47);
     font-size: 14px;
-    
  }
+
  /* whatskuditip-logo */
  .whatskuditip-logo{
      display: flex;
      justify-content: space-around;
      width: 100%;
      margin-top: 2rem;
-   
  }
 
  .whatskuditip_purpose {
@@ -113,6 +155,11 @@
     border: 1px solid #266D9E !important;
     padding: 10 25px !important;
     color: #266D9E !important
+}
+.discover-more:hover{
+    background-color: #266D9E !important;
+    color: #fff !important;
+    animation: shake 0.3s, colorChange 0.2s;
 }
 
 
@@ -158,6 +205,11 @@
     background-color: #fff !important;
     width: fit-content !important;
 } 
+.createkudiPage-btn:hover{
+    background-color: #266D9E !important;
+    color: #fff !important;
+    animation: shake 0.3s, colorChange 0.2s;
+}
 .createkudiPage{
     width: 100%;
 }
@@ -174,6 +226,12 @@
 .items button {
     margin: auto;
 }
+
+.items button:hover{
+    background-color: #fff !important;
+    color: #266D9E !important;
+    animation: shake 0.3s, colorChange 0.2s;
+} 
 
 .createkudiPage-items img{
     width: 65%;
