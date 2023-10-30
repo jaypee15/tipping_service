@@ -90,6 +90,7 @@ const Explore = () => {
                 <p><a href="">See all</a></p>
             </div>
         </div>
+        
 
         <section id="feature">
             <div className="feature-item">
@@ -99,9 +100,11 @@ const Explore = () => {
                 <p>Hello, Im Sarah. I'm a mid 30</p>
                 <p>A sport Analyst...</p>
                 <p>Sport Analyst</p>
+                {/* To be reviewed */}
                 <div className="feature-link">
                     <a href="">follow</a>
                 </div>
+                
             </div>
             <div className="feature-item">
                 <img src={featuree5} />
