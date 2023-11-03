@@ -1,0 +1,24 @@
+.button-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.next-button {
+    width: 100%;
+    justify-content: center;
+
+}
+
+.skip-button {
+    width: 100%;
+    justify-content: center;
+    background-color: #fff !important;
+    color: rgb(25, 170, 227) !important;
+}
+
+.skip-button:hover {
+    color: #fff !important;
+    background-color: rgb(25, 170, 227) !important;
+}
