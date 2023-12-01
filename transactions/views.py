@@ -42,7 +42,7 @@ class DetailTransactionAPIView(generics.RetrieveAPIView):
     
     
 
-class CryptoView(views.APIVIEW):
+class CryptoView(views.APIView):
 
     def post(self, request):
         serializer = CryptoSerializer(data=request.data)
