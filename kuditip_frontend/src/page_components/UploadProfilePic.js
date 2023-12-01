@@ -25,9 +25,7 @@ const UploadProfilePic = () => {
                 <PhotoPlaceHolderIcon />
             </div>
             <BulbContainer text='You can change this at anytime!'/>
-            <Button text='Next'/>
         </form>
-        <Button text='Skip' skip={true} onClick={() => {navigate('/interest')}} type='button'/>
 
     </div>
   )

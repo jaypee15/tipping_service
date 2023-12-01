@@ -22,6 +22,7 @@ import AboutUs from './page_components/AboutUs';
 import MyAccount from './page_components/MyAccount';
 import MyPageHome from './page_components/MyPageHome';
 import Settings from './page_components/Settings';
+import Form from './page_components/Form';
 
 
 
@@ -34,7 +35,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/aboutMember' element={<AboutMember/>}/>
       <Route path='/createUsername' element={<CreateUsername/>}/>
-      <Route path='/acctType' element={<AcctType/>}/>
+      <Route path='/signup-form' element={<Form/>}/>
       <Route path='/earnPlan' element={<EarnPlan/>}/>
       <Route path='/uploadProfilePic' element={<UploadProfilePic/>}/>
       <Route path='/interest' element={<Interest/>}/>
