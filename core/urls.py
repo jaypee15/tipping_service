@@ -14,7 +14,7 @@ from users.views import GoogleLogin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='index.html')),
+    # path('', TemplateView.as_view(template_name='index.html')),
     path('api/', include('transactions.urls')),
     path('api/', include('users.urls')),
     path("api-auth/", include("rest_framework.urls")),
@@ -26,8 +26,9 @@ urlpatterns = [
     path("api/schema/swagger-ui/", SpectacularSwaggerView.as_view(
         url_name="schema"), name="swagger-ui"),
     
-
     path("api/auth/google/", GoogleLogin.as_view(), name="google_login"),
+
+    path("__debug__/", include("debug_toolbar.urls")),
 
 ]
 
