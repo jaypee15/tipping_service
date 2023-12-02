@@ -28,7 +28,7 @@ const SignUp = () => {
         e.preventDefault();
         console.log(signEmail);
         console.log(signPassword);
-        navigate('/acctType')
+        navigate('/signup-form')
     }
 
   return (

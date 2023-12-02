@@ -27,10 +27,7 @@ const AboutMember = () => {
           <textarea name="" id="" cols="30" rows="10" placeholder="Introduce yourself and what you're creating"></textarea>
         </div>
         
-        <Button text='Next'/>
       </form>
-
-      <Button text='Skip' skip={true} onClick={() => {navigate('/createUsername')}} type='button'/>
 
     </div>
   )
