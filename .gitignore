@@ -13,7 +13,6 @@
 
 # misc
 .DS_Store
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -121,7 +120,6 @@ celerybeat-schedule.*
 *.sage.py 
 
 # Environments 
-.env 
 .venv 
 env/ 
 venv/ 
@@ -153,10 +151,10 @@ Control.system-ca-bundle
 GitHub.sublime-settings 
 
 # Visual Studio Code # 
-.vscode/* 
 !.vscode/settings.json 
 !.vscode/tasks.json 
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
 
+config.bat
